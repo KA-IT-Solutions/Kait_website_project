@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap");
 
 * {
@@ -8,9 +14,9 @@
 
 :root {
  --header-height: 3.5rem;
- --first-color: hsl(28, 88%, 62%);
- --title-color: hsl(0, 0%, 95%);
- --text-color: hsl(0, 0%, 75%);
+ --first-color: rgb(42, 75, 254);
+ --title-color: hsl(0, 0%, 7%);
+ --text-color: hsl(0, 0%, 3%);
  /* --body-color: hsl(0, 0%, 6%); */
  --body-font: "Montserrat", sans-serif;
  --second-font: "Dancing Script", cursive;
@@ -34,3 +40,6 @@ ul {
 a {
  text-decoration: none;
 }
+
+
+
