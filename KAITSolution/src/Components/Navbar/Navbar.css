@@ -25,6 +25,11 @@
     font-size: var(--h2-font-size);
     font-family: var(--second-font);
   }
+
+  .logo-image {
+    height: 6rem; /* Adjust size as needed */
+    width: auto;
+  }
   
   .nav__toggle,
   .nav__close {
