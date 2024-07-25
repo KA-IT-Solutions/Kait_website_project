@@ -1,3 +1,15 @@
 .home-container{
-    margin-top: 12rem;
+    margin-top: 6rem;
+    opacity: 0;
+    background-color: rgb(220, 240, 247);
+}
+.first-text{
+    background-color: rgb(30, 159, 183);
+    color: white;
+}
+.discription{
+    background-color: rgb(184, 223, 245);
+}
+.grid-heading{
+    background-color: rgb(8, 50, 72);
 }
