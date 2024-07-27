@@ -41,13 +41,13 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/news" className="nav__link" onClick={closeMenuOnMobile}>
-                News
+              <NavLink to="/About" className="nav__link" onClick={closeMenuOnMobile}>
+                About us
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/about-us" className="nav__link" onClick={closeMenuOnMobile}>
-                About Us
+              <NavLink to="/Servives" className="nav__link" onClick={closeMenuOnMobile}>
+                Services
               </NavLink>
             </li>
             <li className="nav__item">

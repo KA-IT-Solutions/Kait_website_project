@@ -112,7 +112,7 @@ const Home = () => {
                 </li>
                 <li className="flex items-center mt-2">
                   <svg className="w-4 h-4 bg-[rgb(39,158,182)] text-white mr-2" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.707a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-3-3a1 1 0 011.414-1.414L9 11.586l6.293-6.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
-                  Seamless Navigation
+                  Search Engine Optimization
                 </li>
                 <li className="flex items-center mt-2">
                   <svg className="w-4 h-4 bg-[rgb(39,158,182)] text-white mr-2" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.707a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-3-3a1 1 0 011.414-1.414L9 11.586l6.293-6.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
@@ -124,19 +124,19 @@ const Home = () => {
                 </li>
                 <li className="flex items-center mt-2">
                   <svg className="w-4 h-4 bg-[rgb(39,158,182)] text-white mr-2" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.707a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-3-3a1 1 0 011.414-1.414L9 11.586l6.293-6.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
-                  Engaging Interactions
+                  Mobile App
                 </li>
                 <li className="flex items-center mt-2">
                   <svg className="w-4 h-4 bg-[rgb(39,158,182)] text-white mr-2" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.707a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-3-3a1 1 0 011.414-1.414L9 11.586l6.293-6.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
-                  Cross-Browser Compatibility
+                  ERP System
                 </li>
                 <li className="flex items-center mt-2">
                   <svg className="w-4 h-4 bg-[rgb(39,158,182)] text-white mr-2" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.707a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-3-3a1 1 0 011.414-1.414L9 11.586l6.293-6.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
-                  Engaging Interactions
+                  Gaming Platform
                 </li>
                 <li className="flex items-center mt-2">
                   <svg className="w-4 h-4 bg-[rgb(39,158,182)] text-white mr-2" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.707a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-3-3a1 1 0 011.414-1.414L9 11.586l6.293-6.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
-                  Cross-Browser Compatibility
+                  Ai Building Chat Box
                 </li>
               </ul>
             </div>
@@ -147,7 +147,7 @@ const Home = () => {
 
 
 
-      <div className="bg-gray-100 flex items-center justify-center min-h-screen">
+      <div className="bg-gray-100 flex items-center justify-center">
       <div className="container mx-auto p-4">
         <div className="flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg overflow-hidden">
           {/* Image Section */}
@@ -161,9 +161,11 @@ const Home = () => {
           </div>
           {/* Text Section */}
           <div className="w-full md:w-1/2 p-6">
-            <h1 className="text-3xl font-bold text-navy-700">Outstanding Web Experiences</h1>
+            <h1 className="text-3xl font-bold text-navy-700">Comprehensive Digital Solutions</h1>
             <p className="mt-4 text-gray-700">
-              We create responsive, user-friendly, and visually stunning web designs that provide a seamless user experience across all devices. Our expertise ensures fast loading times, engaging interactions, and cross-browser compatibility.
+            We specialize in creating responsive websites using the MERN stack, delivering visually stunning and user-friendly designs that provide a seamless experience across all devices. Our services extend to app development, AI chatbots, scanners, digital marketing, and ERP systems, ensuring that your digital presence is not only engaging but also technologically advanced. We focus on fast loading times, interactive elements, and cross-browser compatibility to enhance your online performance.
+
+            With a commitment to innovation, we tailor our solutions to meet your unique business needs, driving growth and efficiency. Our team of experts ensures that every project is executed with precision and creativity, delivering outstanding results that set you apart from the competition. From concept to deployment, we provide end-to-end support, making sure your digital transformation journey is smooth and successful. Partner with us to elevate your brand and achieve your business goals.
             </p>
           </div>
         </div>
