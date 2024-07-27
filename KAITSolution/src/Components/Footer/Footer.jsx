@@ -1,44 +1,99 @@
-import React from 'react';
-import './Footer.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import React from 'react'
+import { FaFacebook, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
+const sections =[
+  {
+    title:'logo',
+    items:['Marketing','Analytics','Commerce','Data','Cloud']
+},
+{
+    title:'Solutions',
+    items:['Marketing','Analytics','Commerce','Data','Cloud']
+},
+{
+    title:'Support',
+    items:['Marketing','Analytics','Commerce','Data','Cloud']
+},
+{
+    title:'Company',
+    items:['Marketing','Analytics','Commerce','Data','Cloud']
+},
 
+]
+const items =[
+    {
+        Name:'Facebook',
+        icon:FaFacebook,
+        link:'https://facebook.com/'
+    },
+    {
+        Name:'Instagram',
+        icon:FaInstagram,
+        link:'https://instagram.com/'
+    },
+    {
+        Name:'Twitter',
+        icon:FaTwitter,
+        link:'https://twitter.com/'
+    },
+    {
+        Name:'Github',
+        icon:FaGithub ,
+        link:'https://github.com/'
+    }
+    
+]
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-content">
-        <div className="footer-section company-info">
-          <h3>Company Info</h3>
-          <p>Cake Shop Inc.</p>
-          <p><FontAwesomeIcon icon={faMapMarkerAlt} /> IVF Off, Acolate Society Road, Hadpasar Bypass Road, Kharadi</p>
-          <p><FontAwesomeIcon icon={faPhone} /> (123) 456-7890</p>
-          <p><FontAwesomeIcon icon={faEnvelope} /> kaitsolutions1@gmail.com</p>
-        </div>
-        <div className="footer-section quick-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ul>
-        </div>
-        <div className="footer-section social-media">
-          <h3>Follow Us</h3>
-          <div className="social-icons">
-            <a href="https://facebook.com"><FontAwesomeIcon icon={faFacebook} /></a>
-            <a href="https://twitter.com"><FontAwesomeIcon icon={faTwitter} /></a>
-            <a href="https://instagram.com"><FontAwesomeIcon icon={faInstagram} /></a>
-            <a href="https://linkedin.com"><FontAwesomeIcon icon={faLinkedin} /></a>
-          </div>
-        </div>
+    <>
+   <div className="w-screen mt-24 bg-slate-900 text-gray-300 py-8 px-2">
+  <div className="max-w-[1240px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8">
+    {sections.map((section, index) => (
+      <div key={index}>
+        <h6 className='font-bold uppercase pt-2'>
+            {section.title}</h6>
+            <ul>
+                {section.items.map((item,i)=>(
+                    <li key={i}
+                    className='py-1 text-gray-500 hover:text-white cursor-pointer'>
+                        {item}
+                    </li>
+                ))}
+            </ul>
       </div>
-      <div className="footer-bottom">
-        &copy; {new Date().getFullYear()} KA IT Software Solutions Inc. All Rights Reserved.
-      </div>
-    </footer>
-  );
-};
+    ))}
+    <div className='cols-span-2 pt-8 nd;pt-2'>
+        <p className='font-bold uppercase'>
+            kait software solutions llp
+        </p>
+        <p className='py-4'>
+        KAIT Solution On, Kharadi - Hadapsar Bypass Rd, opposite NOVA IVF Center, Sambhajinagar, Kharadi, Pune, Maharashtra 411014
+        </p>
+        <form className='flex flex-col sn:flex-row'>
+            <input type='email' placeholder='Enter the email'
+            className='w-full p-2 mr-4 rounded-md mb-4'/>
+            {/* <button className='p-2 mb-4 '>
+                submit
+            </button> */}
+        </form>
+    </div>
+  </div>
+  <div className='flex flex-cols max-w-[1240px] px-2 py-4 mx-auto justify-between sn:flex-row text-center text-gray'>
+    <p className='py-4'>
+        2024 kait solutions all right reserved
+    </p>
+    <div className='flex justify-between sn:w[300px} pt-4 text-2xl'>
+        {
+            items.map((x,index)=>{
+                return<x.icon key={index} className='hover:text-white cursor-pointer'/>
+            })
+        }
+    </div>
+  </div>
+</div>
 
-export default Footer;
+      
+    </>
+  )
+}
+
+export default Footer
