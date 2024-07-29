@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './Home.css';
 import background from './Home-images/background.avif';
 import employee from './Home-images/employee.png'
+import { FaPaintBrush, FaQuoteRight } from 'react-icons/fa';
 
 const Home = () => {
   useEffect(() => {
@@ -171,6 +172,61 @@ const Home = () => {
         </div>
       </div>
     </div>
+
+
+
+
+    <div className="container mx-auto p-6">
+      <div className="flex flex-col md:flex-row items-start gap-8">
+        <div className="w-full md:w-1/2">
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">
+            Achieve Incredible Results That Are Unrivaled In The Web Design Industry.
+          </h1>
+          <p className="mb-4">
+            Our mission is to empower fledgling business owners by providing them with professional, high-quality websites at an affordable cost. We strive to level the playing field and give small business owners the tools they need to succeed in today’s digital age and unleash their full potential.
+          </p>
+          <p className="mb-4">
+            Our clients are at the heart of everything we do. We’re dedicated to providing personalized, attentive service to each and every one of our clients, and believe that building strong relationships is the key to our success. Moreover, we believe in building websites that are sustainable and scalable, ensuring that our clients are able to achieve their long-term goals.
+          </p>
+        </div>
+        <div className="w-full md:w-1/2 flex flex-col items-center">
+          <div className="relative w-full h-1 bg-gray-300 mb-4 flex items-center justify-center">
+            <FaQuoteRight className="absolute text-sky-500 bg-white p-2 rounded-full" style={{ top: '-1.25rem' }} />
+          </div>
+          <p className="italic text-center mb-4">
+            “I can’t tell you how much I appreciate your complimentary website service. My business is really taking off and I am so thankful to you!”
+          </p>
+          <div className="w-full aspect-w-16 aspect-h-9">
+            <iframe
+              src="https://www.youtube.com/embed/qvMitRMiczs"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              title="YouTube video"
+              className="w-full h-full"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      
+      <div className="mt-8 text-center">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">Provided Services</h2>
+      </div>
+      
+      <div className="relative mt-8 w-full overflow-hidden">
+        <div className="absolute w-full flex space-x-8 animate-scroll">
+          <img src={background} alt="Company 1" className="h-20 w-auto" />
+          <img src={background} alt="Company 2" className="h-20 w-auto" />
+          <img src={background} alt="Company 3" className="h-20 w-auto" />
+          {/* Repeat the logos to create a continuous scrolling effect */}
+          <img src={background} alt="Company 1" className="h-20 w-auto" />
+          <img src={background} alt="Company 2" className="h-20 w-auto" />
+          <img src={background} alt="Company 3" className="h-20 w-auto" />
+        </div>
+      </div>
+    </div>
+
+
 
 
 
