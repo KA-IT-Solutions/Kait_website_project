@@ -77,51 +77,14 @@ const services = [
       { img: '/service4_6.jpg', text: 'Branding assets include visual elements like logos, colors, and typography used to maintain a consistent brand identity across various materials. Wall prints are large-format graphics displayed in physical spaces to reinforce brand presence, create an engaging environment, and enhance brand visibility.' },
     ],
   },
-  // {
-  //   id: 5,
-  //   title: 'Careers',
-  //   description: 'Description for service 1',
-  //   image: '/service5.jpg',
-  //   moreInfo: 'Additional information for service 1.',
-  //   details: {
-  //     image: '/detail1.jpg',
-  //     text: 'Detailed information about Service 1.',
-  //   },
-  //   additionalImages: [
-  //     { img: '/service1_1.jpg', text: '' },
-  //     { img: '/service1_2.jpg', text: '' },
-  //     { img: '/service1_3.jpg', text: 'Detail 3 description' },
-  //     { img: '/service1_4.jpg', text: 'Detail 4 description' },
-  //     { img: '/service1_4.jpg', text: 'Detail 4 description' },
-  //     { img: '/service1_4.jpg', text: 'Detail 4 description' },
-  //   ],
-  // },
-  // {
-  //   id: 6,
-  //   title: '',
-  //   description: 'Description for service 1',
-  //   image: '/service3.png',
-  //   moreInfo: 'Additional information for service 1.',
-  //   details: {
-  //     image: '/detail1.jpg',
-  //     text: 'Detailed information about Service 1.',
-  //   },
-  //   additionalImages: [
-  //     { img: '/service1_1.jpg', text: 'Detail 1 description' },
-  //     { img: '/service1_2.jpg', text: 'Detail 2 description' },
-  //     { img: '/service1_3.jpg', text: 'Detail 3 description' },
-  //     { img: '/service1_4.jpg', text: 'Detail 4 description' },
-  //     { img: '/service1_4.jpg', text: 'Detail 4 description' },
-  //     { img: '/service1_4.jpg', text: 'Detail 4 description' },
-  //   ],
-  // },
-  // Define other services similarly
+ 
 ];
 
 const Services = () => {
   const [selectedService, setSelectedService] = useState(null);
 
   return (
+    <>
     <div className="flex-grow">
       {/* Banner */}
       <div className="relative w-full h-32 sm:h-48 md:h-64 lg:h-80 xl:h-96 overflow-hidden mt-16 sm:mt-20 md:mt-24 lg:mt-28 xl:mt-32">
@@ -185,6 +148,172 @@ const Services = () => {
         </div>
       )}
     </div>
+
+
+
+
+    {/* ---------------------------------- */}
+
+
+    <div className="w-full bg-gray-100 py-12">
+      {/* Full-Screen Width Div */}
+      <div className="relative w-full bg-blue-200 py-8">
+        <div className="absolute inset-x-0 top-0 flex flex-col items-center justify-center text-center mt-8">
+          <h1 className="text-3xl font-bold mb-2">WITH SPRIOC SOFTWARE YOU GET</h1>
+          <div className="w-24 h-1 bg-blue-600 mb-4"></div>
+        </div>
+        
+        {/* Cards Section */}
+        <div className="flex flex-wrap justify-center gap-4 mt-32">
+          {Array.from({ length: 6 }).map((_, idx) => (
+            <div key={idx} className="w-full sm:w-1/2 lg:w-1/3 p-2">
+              <div className="relative bg-white shadow-lg rounded-lg p-6 flex flex-col items-start">
+                {/* Circle with Check Mark */}
+                <div className="absolute top-0 left-0 flex items-center justify-center w-10 h-10 bg-blue-600 rounded-full">
+                  <span className="text-white text-2xl">✔</span>
+                </div>
+                <p className="mt-12">Card {idx + 1} Content</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+
+    {/* -------------------------------- */}
+
+
+
+    <div className="min-h-screen p-4 bg-gray-100">
+      {/* Header Section */}
+      <div className="text-center mb-8">
+        <h1 className="text-4xl font-bold mb-2">OUR DEVELOPMENT PROCESS</h1>
+        <div className="w-32 h-1 bg-indigo-600 mx-auto mb-6"></div>
+        <p className="text-lg max-w-4xl mx-auto">
+          We deliver the highest level of customer service by deploying innovative and collaborative project management systems to build the most professional, robust, and highly scalable web & mobile solutions with the highest quality standards.
+        </p>
+      </div>
+
+      {/* Cards Section */}
+      <div className="flex flex-wrap -mx-4">
+        <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div className="relative p-6">
+              <div className="absolute top-0 left-0 -ml-4 -mt-4 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                <span className="text-white text-xl font-bold">&#10003;</span>
+              </div>
+              <h2 className="text-xl font-bold mb-4">Post Your Project Requirements</h2>
+              <p>
+                Our analysts will thoroughly review your project requirements and select the most experienced developers best suited for your project.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div className="relative p-6">
+              <div className="absolute top-0 left-0 -ml-4 -mt-4 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                <span className="text-white text-xl font-bold">&#10003;</span>
+              </div>
+              <h2 className="text-xl font-bold mb-4">Discuss Project Details with our Analysts</h2>
+              <p>
+                Our experts will contact you within no time to discuss your project-related queries and to offer the best solution for your project development.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div className="relative p-6">
+              <div className="absolute top-0 left-0 -ml-4 -mt-4 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                <span className="text-white text-xl font-bold">&#10003;</span>
+              </div>
+              <h2 className="text-xl font-bold mb-4">Choose Engagement Terms & Timelines</h2>
+              <p>
+                Based on the project consultation provided by our experts, you can choose the engagement timelines for your project execution.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div className="relative p-6">
+              <div className="absolute top-0 left-0 -ml-4 -mt-4 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                <span className="text-white text-xl font-bold">&#10003;</span>
+              </div>
+              <h2 className="text-xl font-bold mb-4">Securely Pay Online and Get Started!</h2>
+              <p>
+                Make payment through our 100% secure online system and our team shall immediately get started on your project within 24 hours.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    {/* ------------------------------------ */}
+
+
+
+    <div className="min-h-screen p-4 bg-gray-100">
+      {/* Header Section */}
+      <div className="text-center mb-8">
+        <h1 className="text-4xl font-bold mb-2">OUR COMMITMENT & GUARANTEE</h1>
+        <div className="w-32 h-1 bg-indigo-600 mx-auto mb-6"></div>
+        <p className="text-lg max-w-4xl mx-auto">
+          SPRIOC DELIVERS ROBUST, SCALABLE AND HIGH PERFORMANCE SOFTWARE, WEB AND MOBILE APP DEVELOPMENT SERVICES TO HELP YOU HARNESS THE POWER OF TECHNOLOGY, CONSULTING AND MAXIMIZE YOUR ONLINE BUSINESS INVESTMENT.
+        </p>
+      </div>
+
+      {/* Sections */}
+      <div className="flex flex-wrap">
+        {/* Section 1 */}
+        <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+          <div className="bg-white shadow-lg rounded-lg p-6 border-l-4 border-indigo-600">
+            <h2 className="text-xl font-bold mb-4">100% TRANSPARENCY</h2>
+            <p>
+              At SPRIOC, we believe in complete transparency with our clients and we keep them fully updated during the entire development production cycle.
+            </p>
+          </div>
+        </div>
+
+        {/* Section 2 */}
+        <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+          <div className="bg-white shadow-lg rounded-lg p-6 border-l-4 border-indigo-600">
+            <h2 className="text-xl font-bold mb-4">95% ON TIME DELIVERY</h2>
+            <p>
+              Our pursuit of agile development methodology has resulted in an enviable 95% on-time delivery track record of our operations.
+            </p>
+          </div>
+        </div>
+
+        {/* Section 3 */}
+        <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+          <div className="bg-white shadow-lg rounded-lg p-6 border-l-4 border-indigo-600">
+            <h2 className="text-xl font-bold mb-4">FREE 30 DAYS SUPPORT</h2>
+            <p>
+              We take complete responsibility for our work and provide free 30 days support to all our customers even after the software or mobile app has been launched.
+            </p>
+          </div>
+        </div>
+
+        {/* Section 4 */}
+        <div className="w-full sm:w-1/2 lg:w-1/4 px-4 mb-8">
+          <div className="bg-white shadow-lg rounded-lg p-6 border-l-4 border-indigo-600">
+            <h2 className="text-xl font-bold mb-4">24X7 SUPPORT</h2>
+            <p>
+              Our communication channels are open 24/7, connecting you with the appropriate team of experts to ensure smooth execution of your project.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </>
   );
 };
 
