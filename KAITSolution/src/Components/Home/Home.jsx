@@ -3,6 +3,8 @@ import './Home.css';
 import background from './Home-images/background.avif';
 import employee from './Home-images/employee.png'
 import { FaPaintBrush, FaQuoteRight } from 'react-icons/fa';
+import { FaCreditCard, FaHeadset, FaTools, FaSearch, FaFileContract } from 'react-icons/fa';
+
 
 const Home = () => {
   useEffect(() => {
@@ -215,7 +217,7 @@ const Home = () => {
       
       <div className="relative mt-8 w-full overflow-hidden">
         <div className="absolute w-full flex space-x-8 animate-scroll">
-          <img src={background} alt="Company 1" className="h-20 w-auto" />
+          <img src={employee} alt="Company 1" className="h-20 w-auto" />
           <img src={background} alt="Company 2" className="h-20 w-auto" />
           <img src={background} alt="Company 3" className="h-20 w-auto" />
           {/* Repeat the logos to create a continuous scrolling effect */}
@@ -226,7 +228,38 @@ const Home = () => {
       </div>
     </div>
 
-
+    <div className="bg-navy-700  text-white flex flex-col items-center justify-center business-slotion">
+      <div className="container mx-auto p-4 text-center">
+        <h1 className="text-4xl font-bold mb-8">We Offer Business Solutions That Ensure Your Success</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+          {/* Card 1 */}
+          <div className="bg-white text-black p-6 rounded-lg shadow-lg flex flex-col items-center">
+            <FaCreditCard className="text-sky-500 text-4xl mb-4" />
+            <h2 className="text-2xl font-bold">Payment Gateway</h2>
+          </div>
+          {/* Card 2 */}
+          <div className="bg-white text-black p-6 rounded-lg shadow-lg flex flex-col items-center">
+            <FaHeadset className="text-sky-500 text-4xl mb-4" />
+            <h2 className="text-2xl font-bold">Dedicated Support</h2>
+          </div>
+          {/* Card 3 */}
+          <div className="bg-white text-black p-6 rounded-lg shadow-lg flex flex-col items-center">
+            <FaTools className="text-sky-500 text-4xl mb-4" />
+            <h2 className="text-2xl font-bold">Website Maintenance</h2>
+          </div>
+          {/* Card 4 */}
+          <div className="bg-white text-black p-6 rounded-lg shadow-lg flex flex-col items-center">
+            <FaSearch className="text-sky-500 text-4xl mb-4" />
+            <h2 className="text-2xl font-bold">Search Engine Optimization</h2>
+          </div>
+          {/* Card 5 */}
+          <div className="bg-white text-black p-6 rounded-lg shadow-lg flex flex-col items-center">
+            <FaFileContract className="text-sky-500 text-4xl mb-4" />
+            <h2 className="text-2xl font-bold">Terms of Service Agreement</h2>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 

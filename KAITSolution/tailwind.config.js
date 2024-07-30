@@ -16,7 +16,8 @@ module.exports = {
   theme: {
     extend: {},
     // colors: {
-    //   customBlue: 'rgb(0,92,29)', // Adding your custom color
+    //   'navy-700': '#1a365d',
+    //   'sky-500': '#38bdf8',
     // },
   },
   plugins: [],
