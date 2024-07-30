@@ -82,6 +82,15 @@ const services = [
  
 ];
 
+const cardContents = [
+  "Customized plans that align with your business goals to maximize online presence and ROI.",
+  "Boost your website's visibility and attract more organic traffic with our proven SEO techniques.",
+  "High-quality content that captivates your audience and drives engagement across all platforms.",
+  "Comprehensive management of your social media accounts to increase brand awareness and customer loyalty.",
+  "Actionable analytics and insights to make informed decisions and continuously improve your marketing efforts.",
+  "Dedicated support to assist you every step of the way, ensuring your marketing campaigns run smoothly."
+];
+
 const Services = () => {
   const [selectedService, setSelectedService] = useState(null);
 
@@ -93,7 +102,11 @@ const Services = () => {
         <img src={service} alt="Banner" className="w-full h-full object-cover animate-blink" />
       </div>
 
-      <h2 className="text-3xl font-bold text-center my-8">Our Services</h2>
+      <div className="flex flex-col items-center my-8">
+  <h2 className="text-3xl font-bold text-center">OUR SERVICES</h2>
+  <div className="w-24 h-1 bg-blue-600 mt-2"></div>
+</div>
+      
 
       {selectedService ? (
         <div className="p-4">
@@ -157,31 +170,31 @@ const Services = () => {
     {/* ---------------------------------- */}
 
 
-    <div className="w-full bg-gray-100 py-12">
-      {/* Full-Screen Width Div */}
-      <div className="relative w-full bg-blue-200 py-8">
-        <div className="absolute inset-x-0 top-0 flex flex-col items-center justify-center text-center mt-8">
-          <h1 className="text-3xl font-bold mb-2">WITH SPRIOC SOFTWARE YOU GET</h1>
-          <div className="w-24 h-1 bg-blue-600 mb-4"></div>
-        </div>
-        
-        {/* Cards Section */}
-        <div className="flex flex-wrap justify-center gap-4 mt-32">
-          {Array.from({ length: 6 }).map((_, idx) => (
-            <div key={idx} className="w-full sm:w-1/2 lg:w-1/3 p-2">
-              <div className="relative bg-white shadow-lg rounded-lg p-6 flex flex-col items-start">
-                {/* Circle with Check Mark */}
-                <div className="absolute top-0 left-0 flex items-center justify-center w-10 h-10 bg-blue-600 rounded-full">
-                  <span className="text-white text-2xl">✔</span>
-                </div>
-                <p className="mt-12">Card {idx + 1} Content</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+    
+<div className="w-full bg-gray-100 py-12">
+  {/* Full-Screen Width Div */}
+  <div className="relative w-full bg-blue-200 py-8">
+    <div className="absolute inset-x-0 top-0 flex flex-col items-center justify-center text-center mt-8">
+      <h1 className="text-3xl font-bold mb-2">WITH KAIT SOLUTION YOU GET</h1>
+      <div className="w-24 h-1 bg-blue-600 mb-4"></div>
     </div>
-
+    
+    {/* Cards Section */}
+    <div className="flex flex-wrap justify-center gap-4 mt-32">
+      {cardContents.map((content, idx) => (
+        <div key={idx} className="w-full sm:w-1/2 lg:w-1/3 p-2">
+          <div className="relative bg-white shadow-lg rounded-lg p-6 flex flex-col items-start">
+            {/* Circle with Check Mark */}
+            <div className="absolute top-0 left-0 flex items-center justify-center w-10 h-10 bg-blue-600 rounded-full">
+              <span className="text-white text-2xl">✔</span>
+            </div>
+            <p className="mt-12">{content}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
 
     {/* -------------------------------- */}
 
