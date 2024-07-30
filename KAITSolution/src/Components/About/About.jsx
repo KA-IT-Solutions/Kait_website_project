@@ -6,22 +6,22 @@ import aboutmain from './About-images/about-main.jpg'
 
 const reviews = [
   {
-    text: "Great service and delicious cakes!",
+    text: "I had an excellent experience with ArtisansInterior Furniture. The website is user-friendly, the furniture quality is outstanding, and the customer service is exceptional. Highly recommended for beautifully crafted pieces!",
     image: "https://via.placeholder.com/150",
-    name: "Alice",
-    shopName: "Alice's Bakery"
+    name: "Vivek",
+    shopName: "Artisans Interior"
   },
   {
-    text: "I love the variety of cakes available.",
+    text: "The Lilas Cake Shop exceeded my expectations! Their cakes are not only beautifully crafted but also incredibly delicious. The customer service was friendly and attentive, ensuring my order was perfect. Highly recommended for any special occasion!.",
     image: "https://via.placeholder.com/150",
-    name: "Bob",
-    shopName: "Bob's Cake Shop"
+    name: "Sager",
+    shopName: "The Lila's Cake Shop"
   },
   {
-    text: "Highly recommend this place for special occasions.",
+    text: "Krishna Academy is fantastic! The instructors are knowledgeable and passionate, making learning engaging and effective. The curriculum is well-structured, and the support staff is always helpful. Highly recommended for anyone seeking quality education and a positive learning environment!",
     image: "https://via.placeholder.com/150",
     name: "Carol",
-    shopName: "Carol's Confections"
+    shopName: "Krishana Acadmey"
   }
 ];
 
@@ -71,21 +71,21 @@ const BigCard = () => {
           <h2 className="text-2xl font-bold">TECHNOLOGY LEADERSHIP</h2>
         </div>
         <p className="mb-6">
-          Sprioc Software stays on top of new advances in the information technology world, so you can be assured that our software development technologies and technique choices are at the height of current knowledge.
+          KAIT Solutions stays on top of new advances in the information technology world, so you can be assured that our software development technologies and technique choices are at the height of current knowledge.
         </p>
         <div className="flex items-center mb-4">
           <FaComments className="text-blue-500 text-3xl mr-3" /> {/* Icon for COMMUNICATION */}
           <h2 className="text-2xl font-bold">COMMUNICATION</h2>
         </div>
         <p>
-          At Sprioc Software we take delight in providing excellent customer service. We guarantee we don’t promise anything we can’t follow up on. We are honest and completely accountable with our clients.
+        KAIT Solutionswe take delight in providing excellent customer service. We guarantee we don’t promise anything we can’t follow up on. We are honest and completely accountable with our clients.
         </p>
         <div className="flex items-center mb-4">
           <div className="relative">
             <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-8 bg-gray-500"></div>
             <h2 className="text-2xl font-bold">VALUE</h2>
             <p>
-              Our offshore development facilities in Pune afford us the flexibility to charge competitive prices for our quality work. Our near decade of specializations and expertise guarantee that Sprioc Software’s development costs are the
+              Our offshore development facilities in Pune afford us the flexibility to charge competitive prices for our quality work. Our near decade of specializations and expertise guarantee that  KAIT Solutions costs are the
               most affordable relative to value added, and our finished products are of superior quality.
             </p>
           </div>
@@ -114,13 +114,12 @@ const About = () => {
               <h2 className="text-2xl font-bold mb-4">ABOUT THE COMPANY</h2>
               <h1 className="text-3xl font-bold mb-4">KAIT SOFTWARE SOLUTIONS</h1>
               <p className="mb-4">
-                We are committed to providing the best services and products to our customers. Our team is dedicated to excellence and customer satisfaction.
+              At KAIT Solutions, we are passionate about driving digital innovation and delivering transformative results for businesses of all sizes. Founded with a vision to bridge the gap between technology and business needs, we specialize in providing comprehensive digital marketing services that empower our clients to reach their full potential online.
               </p>
               <h3 className="text-xl font-semibold mb-4">
-                Our Mission: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ducimus, quo nisi atque ratione debitis minima eos quibusdam, reprehenderit error aspernatur neque sapiente eius incidunt fugit earum repellat eaque perspiciatis.
-              </h3>
+                Our Mission: Our mission at KAIT Solutions is to empower businesses with innovative digital marketing solutions that drive growth, foster engagement, and create lasting value. We are dedicated to helping our clients navigate the ever-evolving digital landscape and achieve.</h3>
               <p className="mb-4">
-                To innovate and lead in our industry, always prioritizing quality and integrity. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ducimus, quo nisi atque ratione debitis minima eos quibusdam, reprehenderit error aspernatur neque sapiente eius incidunt fugit earum repellat eaque perspiciatis.
+              At KAIT Solutions, we believe in building long-term partnerships with our clients. Our commitment to excellence and customer satisfaction ensures that we are always striving to exceed expectations and deliver exceptional value.
               </p>
               <div className="w-full h-1 bg-gray-200 mb-8"></div>
             </div>
@@ -130,9 +129,9 @@ const About = () => {
           </div>
         </div>
         <div className="text-center py-8">
-          <h2 className="text-3xl font-bold">WHY CHOOSE SPRIOC</h2>
+          <h2 className="text-3xl font-bold">WHY CHOOSE KAIT SOLUTIONS</h2>
           <p className="text-lg mt-4">
-            There are many reasons why Sprioc software technology is the company to choose for your software development or software product development project.
+          KAIT Solutions offers tailored digital marketing strategies, an expert team with proven results, and innovative tools to boost your online presence. We focus on your success with a client-centric approach and a comprehensive range of services. Choose us for effective, growth-driven solutions.
           </p>
         </div>
         <BigCard />
