@@ -19,3 +19,12 @@
 .card2-heading{
     background-color: rgb(62,179,232);
 }
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+  }
+  

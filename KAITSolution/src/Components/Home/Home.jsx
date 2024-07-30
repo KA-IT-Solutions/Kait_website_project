@@ -196,7 +196,7 @@ const Home = () => {
           <p className="italic text-center mb-4">
             “I can’t tell you how much I appreciate your complimentary website service. My business is really taking off and I am so thankful to you!”
           </p>
-          <div className="w-full aspect-w-16 aspect-h-9">
+          <div className="w-full aspect-w-16 aspect-h-10">
             <iframe
               src="https://www.youtube.com/embed/qvMitRMiczs"
               frameBorder="0"
