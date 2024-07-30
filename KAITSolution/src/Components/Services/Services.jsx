@@ -1,3 +1,18 @@
+<<<<<<< HEAD
+import React from "react";
+import "./Services.css";
+
+const Services = () => {
+  return (
+    
+    <div>
+    
+      </div>
+    
+  );
+};
+
+=======
 // src/pages/Services.jsx
 import React, { useState } from 'react';
 import service from './banner1.jpg'
@@ -317,4 +332,5 @@ const Services = () => {
   );
 };
 
+>>>>>>> 5192f3c985341cbde5d83fe7f5c3e0fcfcce065c
 export default Services;
