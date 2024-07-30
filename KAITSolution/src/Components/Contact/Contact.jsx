@@ -1,6 +1,6 @@
 import React from 'react'
 import './Contact.css'
-import contact from './banner1.png'
+import contact from './banner.jpg'
 
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; // Importing icons
 
