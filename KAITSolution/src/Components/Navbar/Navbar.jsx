@@ -41,28 +41,34 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/news" className="nav__link" onClick={closeMenuOnMobile}>
-                News
+              <NavLink to="/About" className="nav__link" onClick={closeMenuOnMobile}>
+                About us
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/about-us" className="nav__link" onClick={closeMenuOnMobile}>
-                About Us
+              <NavLink to="/Services" className="nav__link" onClick={closeMenuOnMobile}>
+                Services
               </NavLink>
             </li>
             <li className="nav__item">
+<<<<<<< HEAD
               <NavLink to="/services" className="nav__link" onClick={closeMenuOnMobile}>
                 Services           
                 </NavLink>
+=======
+              <NavLink to="/Career" className="nav__link" onClick={closeMenuOnMobile}>
+                Career
+              </NavLink>
+>>>>>>> 5192f3c985341cbde5d83fe7f5c3e0fcfcce065c
             </li>
-            <li className="nav__item">
+            {/* <li className="nav__item">
               <NavLink to="/location" className="nav__link" onClick={closeMenuOnMobile}>
                 Location
               </NavLink>
-            </li>
+            </li> */}
             <li className="nav__item">
-              <NavLink to="/get-started" className="nav__link nav__cta" onClick={closeMenuOnMobile}>
-                Get Started
+              <NavLink to="/contact" className="nav__link nav__cta" onClick={closeMenuOnMobile}>
+                Contact Us
               </NavLink>
             </li>
           </ul>

@@ -13,3 +13,18 @@
 .grid-heading{
     background-color: rgb(8, 50, 72);
 }
+.card1-heading{
+    background-color: rgb(232,173,73);
+}
+.card2-heading{
+    background-color: rgb(62,179,232);
+}
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+  }
+  
