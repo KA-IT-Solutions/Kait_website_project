@@ -52,9 +52,7 @@ const Navbar = () => {
             </li>
             <li className="nav__item">
 
-               <NavLink to="/services" className="nav__link" onClick={closeMenuOnMobile}>
-                Services           
-                </NavLink>
+             
 
               <NavLink to="/Career" className="nav__link" onClick={closeMenuOnMobile}>
                 Career
