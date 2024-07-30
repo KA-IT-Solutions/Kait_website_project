@@ -47,3 +47,15 @@
 .business-slotion1{
     padding-top: 2rem;
 }
+
+.clip-slope {
+    clip-path: polygon(0 0, 30% 0, 0 100%, 0 20%);
+  }
+
+.employee1{
+    background-color: rgb(220, 240, 247);
+}
+
+.FTQ-container{
+    margin-bottom: 0;
+}
