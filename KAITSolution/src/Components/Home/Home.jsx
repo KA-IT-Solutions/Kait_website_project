@@ -1,15 +1,22 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import background from './Home-images/background.avif';
 import employee from './Home-images/employee.png';
 import employee1 from './Home-images/employee1.jpg'
 import webdesign from './Home-images/webdesign.png';
 import websitedesign from './Home-images/websiteDesign.webp'
+import karishna from './Home-images/logo1.jpeg';
+import lilas from './Home-images/logo2.png';
+import funiture from './Home-images/logo3.png';
 import { FaPaintBrush, FaQuoteRight } from 'react-icons/fa';
 import { FaCreditCard, FaHeadset, FaTools, FaSearch, FaFileContract } from 'react-icons/fa';
 import { FaPlus, FaMinus } from 'react-icons/fa';
 import { FaCheckCircle } from 'react-icons/fa';
 import { FaStar } from 'react-icons/fa';
+import '../Services/Services'
+
+
 
 
 const faqData = [
@@ -38,27 +45,27 @@ const faqData = [
 
 const testimonials = [
   {
-    name: "John Doe",
+    name: "Santosh Kutwal",
     image: "/path/to/image1.jpg",
     stars: 5,
-    websiteLogo: "/path/to/logo1.png",
-    shopName: "John's Bakery",
-    description: "Kait Solutions provided an excellent service. Our website looks amazing and works flawlessly."
+    websiteLogo: karishna,
+    shopName: "Karishna Academy",
+    description: "Kait Solutions delivered an outstanding service. Our website is professional, user-friendly, and perfectly represents our academy. We highly recommend their expertise."
   },
   {
     name: "Jane Smith",
     image: "/path/to/image2.jpg",
     stars: 5,
-    websiteLogo: "/path/to/logo2.png",
-    shopName: "Jane's Fashion",
+    websiteLogo: lilas,
+    shopName: "Lilas's Cake Shop",
     description: "Fantastic work by Kait Solutions. Our e-commerce platform is now more user-friendly and efficient."
   },
   {
     name: "Robert Johnson",
     image: "/path/to/image3.jpg",
     stars: 5,
-    websiteLogo: "/path/to/logo3.png",
-    shopName: "Robert's Electronics",
+    websiteLogo: funiture,
+    shopName: "Artisans Interior",
     description: "Highly recommend Kait Solutions for their professionalism and expertise. Our sales have increased significantly."
   }
 ];
@@ -148,7 +155,9 @@ const Home = () => {
                     <li className="py-2 border-b border-gray-300">Business Email</li>
                     <li className="py-2">SEO Optimized Design</li>
                   </ul>
-                  <button className="card1-heading text-white p-4 rounded-lg mt-4">Get Started</button>
+                  <Link to="/services">
+                    <button className="card2-heading text-white p-4 rounded-lg mt-4">Get Started</button>
+                  </Link>
                 </div>
               </div>
 
@@ -158,7 +167,7 @@ const Home = () => {
                     <h3 className="text-xl font-bold">Business Pro Website</h3>
                   </div> */}
                   <div className=" p-4 rounded-t-lg italic card2-heading">
-                    <h3 className="text-xl font-bold text-center">MOBILE APP DEVELOPMENT</h3>
+                    <h3 className="text-xl font-bold text-center">ANDRIOD APP DEVELOPMENT</h3>
                   </div>
                 </div>
                 <div className="bg-gray-300 p-4">
@@ -166,13 +175,15 @@ const Home = () => {
                 </div>
                 <div className="bg-white p-4 text-center">
                   <ul className="list-none">
-                    <li className="py-2 border-b border-gray-300">10 Products Listed</li>
-                    <li className="py-2 border-b border-gray-300">Domain Registrstion</li>
-                    <li className="py-2 border-b border-gray-300">Web Hosting*</li>
-                    <li className="py-2 border-b border-gray-300">Business Email</li>
-                    <li className="py-2">SEO Optimized Design</li>
+                    <li className="py-2 border-b border-gray-300">Custom App Design</li>
+                    <li className="py-2 border-b border-gray-300">API Integration</li>
+                    <li className="py-2 border-b border-gray-300">Cross-Platform Compatibility</li>
+                    <li className="py-2 border-b border-gray-300">Security Features</li>
+                    <li className="py-2">Ongoing Support</li>
                   </ul>
+                  <Link to="/services">
                   <button className="card2-heading text-white p-4 rounded-lg mt-4">Get Started</button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -302,22 +313,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-        <div className="mt-8 text-center">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Provided Services</h2>
-        </div>
-
-        <div className="relative mt-8 w-full overflow-hidden">
-          <div className="absolute w-full flex space-x-8 animate-scroll">
-            <img src={employee} alt="Company 1" className="h-20 w-auto" />
-            <img src={background} alt="Company 2" className="h-20 w-auto" />
-            <img src={background} alt="Company 3" className="h-20 w-auto" />
-            {/* Repeat the logos to create a continuous scrolling effect */}
-            <img src={background} alt="Company 1" className="h-20 w-auto" />
-            <img src={background} alt="Company 2" className="h-20 w-auto" />
-            <img src={background} alt="Company 3" className="h-20 w-auto" />
-          </div>
-        </div>
       </div>
 
       <div className="bg-navy-700  text-white flex flex-col items-center justify-center business-slotion">
@@ -383,7 +378,7 @@ const Home = () => {
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-sky-500 mr-2" />
-                  Enhances user experience and navigation.
+                  Increases Conversion Rates and Sales
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-sky-500 mr-2" />
@@ -427,63 +422,63 @@ const Home = () => {
       {/* ---------------------------------------------------- */}
 
       <div className=" min-h-screen py-10 px-4">
-      <div className="max-w-6xl mx-auto text-center">
-        <h1 className="text-4xl font-bold mb-8">What Our Clients Are Saying</h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gray-100 p-6 rounded-lg shadow-lg">
-              <img
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="w-24 h-24 rounded-full mx-auto"
-              />
-              <h2 className="text-xl font-semibold mt-4">{testimonial.name}</h2>
-              <div className="flex justify-center mt-2">
-                {[...Array(testimonial.stars)].map((star, i) => (
-                  <FaStar key={i} className="text-yellow-500" />
-                ))}
-              </div>
-              <div className="flex justify-center items-center mt-4">
+        <div className="max-w-6xl mx-auto text-center">
+          <h1 className="text-4xl font-bold mb-8">What Our Clients Are Saying</h1>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="bg-gray-100 p-6 rounded-lg shadow-lg">
                 <img
-                  src={testimonial.websiteLogo}
-                  alt={testimonial.shopName}
-                  className="w-10 h-10 mr-2"
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  className="w-24 h-24 rounded-full mx-auto"
                 />
-                <span>{testimonial.shopName}</span>
+                <h2 className="text-xl font-semibold mt-4">{testimonial.name}</h2>
+                <div className="flex justify-center mt-2">
+                  {[...Array(testimonial.stars)].map((star, i) => (
+                    <FaStar key={i} className="text-yellow-500" />
+                  ))}
+                </div>
+                <div className="flex justify-center items-center mt-4">
+                  <img
+                    src={testimonial.websiteLogo}
+                    alt={testimonial.shopName}
+                    className="w-10 h-10 mr-2"
+                  />
+                  <span>{testimonial.shopName}</span>
+                </div>
+                <p className="mt-4 text-gray-600">{testimonial.description}</p>
               </div>
-              <p className="mt-4 text-gray-600">{testimonial.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-    </div>
 
-    {/* -------------------------------------------------------------- */}
+      {/* -------------------------------------------------------------- */}
 
-    <div className=" min-h-screen flex items-center justify-center p-4 employee1">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="text-black p-4 rounded-lg">
-          <h1 className="text-3xl font-bold mb-4 p-2 discription">The Impact of Effective Website Design and Development</h1>
-          <p className="mb-4">
-            Your online presence is significantly influenced by the design and development of your website. Even minor enhancements can significantly impact your success in the market. A basic and poorly optimized website is no longer sufficient for businesses.
-          </p>
-          <p className="mb-4">
-            In the evolving digital landscape, customer discernment plays a crucial role in choosing business partners.
-          </p>
-          <p className="mb-4">
-            For the past decade, The Make Lots Foundation has consistently outperformed other web design companies. Our commitment to delivering superior outcomes sets us apart and ensures our clients’ success.
-          </p>
-        </div>
-        <div className="relative">
-          <img
-            src={employee1}
-            alt="Impactful Design"
-            className="w-full h-auto rounded-lg"
-          />
-          <div className="absolute top-0 left-0 w-full h-full  clip-slope employee1"></div>
+      <div className=" min-h-screen flex items-center justify-center p-4 employee1">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="text-black p-4 rounded-lg">
+            <h1 className="text-3xl font-bold mb-4 p-2 discription">The Impact of Effective Website Design and Development</h1>
+            <p className="mb-4">
+              Your online presence is significantly influenced by the design and development of your website. Even minor enhancements can significantly impact your success in the market. A basic and poorly optimized website is no longer sufficient for businesses.
+            </p>
+            <p className="mb-4">
+              In the evolving digital landscape, customer discernment plays a crucial role in choosing business partners.
+            </p>
+            <p className="mb-4">
+              For the past decade, The Make Lots Foundation has consistently outperformed other web design companies. Our commitment to delivering superior outcomes sets us apart and ensures our clients’ success.
+            </p>
+          </div>
+          <div className="relative">
+            <img
+              src={employee1}
+              alt="Impactful Design"
+              className="w-full h-auto rounded-lg"
+            />
+            <div className="absolute top-0 left-0 w-full h-full  clip-slope employee1"></div>
+          </div>
         </div>
       </div>
-    </div>
 
 
 
@@ -491,33 +486,33 @@ const Home = () => {
       {/* ------------------------------------------------------------ */}
 
       <div className="bg-gray-100 min-h-screen py-10 px-4 FTQ-container">
-      <div className="max-w-2xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-8">Frequently Asked Questions</h1>
-        <div className="space-y-4">
-          {faqData.map((item, index) => (
-            <div key={index} className="bg-white shadow-md rounded-lg p-4">
-              <div
-                className="flex justify-between items-center cursor-pointer"
-                onClick={() => toggleFaq(index)}
-              >
-                <h2 className="text-lg font-semibold">{item.question}</h2>
-                {activeIndex === index ? (
-                  <FaMinus className="text-sky-500" />
-                ) : (
-                  <FaPlus className="text-sky-500" />
+        <div className="max-w-2xl mx-auto">
+          <h1 className="text-4xl font-bold text-center mb-8">Frequently Asked Questions</h1>
+          <div className="space-y-4">
+            {faqData.map((item, index) => (
+              <div key={index} className="bg-white shadow-md rounded-lg p-4">
+                <div
+                  className="flex justify-between items-center cursor-pointer"
+                  onClick={() => toggleFaq(index)}
+                >
+                  <h2 className="text-lg font-semibold">{item.question}</h2>
+                  {activeIndex === index ? (
+                    <FaMinus className="text-sky-500" />
+                  ) : (
+                    <FaPlus className="text-sky-500" />
+                  )}
+                </div>
+                {activeIndex === index && (
+                  <p className="mt-2 text-gray-600">{item.answer}</p>
                 )}
               </div>
-              {activeIndex === index && (
-                <p className="mt-2 text-gray-600">{item.answer}</p>
-              )}
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-    </div>
-    {/* ----------------------------------------- */}
+      {/* ----------------------------------------- */}
 
-    
+
 
 
 
