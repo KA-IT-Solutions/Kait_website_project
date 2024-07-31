@@ -77,19 +77,19 @@ const Contact = () => {
           <div className="space-y-4">
             <div className="flex items-center">
               
-              <p className="text-2xl font-bold mb-6   text-center font-sans">KAIT Softwaer Solution LLP. </p>
+              <p className="text-2xl font-bold mb-6   text-center ">KAIT Softwaer Solution LLP. </p>
             </div>
             <div className="flex items-center">
               <FaPhone className="text-indigo-600 text-3xl mr-2" />
-              <p className="text-1xl  mb-6 text-center font-mono">+91-9096797961</p>
+              <p className="text-1xl  mb-6 text-center ">+91-9764065434 / 8010339921</p>
             </div>
             <div className="flex items-center">
-              <FaEnvelope className="text-indigo-600  text-3xl mr-2 font-mono" />
+              <FaEnvelope className="text-indigo-600  text-3xl mr-2 " />
               <p className="text-1xl   mb-6 text-center font-mono">kaitsolutions1@gmail.com</p>
             </div>
             <div className="flex items-center">
               <FaMapMarkerAlt className="text-indigo-600  text-3xl mr-2" />
-              <p className="text-1xl  mb-6 text-center font-mono">
+              <p className="text-1xl  mb-6 text-center ">
               KAIT Softwaer Solution LLP<br/>
                 Sadguru Plaza, Opposite More Store,<br />
                 Rakshak Nagar, Kharadi,<br />
@@ -102,7 +102,7 @@ const Contact = () => {
     </div>
       <div className='google-map' >
         
-      <iframe width="100%" height="380" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=520&amp;height=500&amp;hl=en&amp;q=Karishna%20Academy%20On,%20Kharadi%20-%20Hadapsar%20Bypass%20Rd,%20opposite%20NOVA%20IVF%20Center,%20Sambhajinagar,%20Kharadi,%20Pune,%20Maharashtra%20411014+(KAIT%20Software%20Solution%20LLP)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps tracker sport</a></iframe>
+      <iframe width="100%" height="380" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d121032.09867740012!2d73.7571596100699!3d18.562625409998702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bc2c36612827755%3A0x9372d84c4157f6e7!2ska%20it%20solutions%20pune!3m2!1d18.547134099999997!2d73.9361192!5e0!3m2!1sen!2sin!4v1722408322926!5m2!1sen!2sin"><a href="https://www.gps.ie/">gps tracker sport</a></iframe>
   
       </div>
       </>

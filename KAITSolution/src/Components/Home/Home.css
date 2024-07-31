@@ -56,6 +56,10 @@
     background-color: rgb(220, 240, 247);
 }
 
+.video{
+    height: 17rem;
+}
+
 .FTQ-container{
     margin-bottom: 0;
 }

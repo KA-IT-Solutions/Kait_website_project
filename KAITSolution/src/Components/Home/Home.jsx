@@ -308,7 +308,7 @@ const Home = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 title="YouTube video"
-                className="w-full h-full"
+                className="w-full video"
               ></iframe>
             </div>
           </div>
