@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import video from './Home-images/video.mp4';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import background from './Home-images/background.avif';
@@ -45,24 +46,21 @@ const faqData = [
 
 const testimonials = [
   {
-    name: "Santosh Kutwal",
-    image: "/path/to/image1.jpg",
+ 
     stars: 5,
     websiteLogo: karishna,
     shopName: "Karishna Academy",
     description: "Kait Solutions delivered an outstanding service. Our website is professional, user-friendly, and perfectly represents our academy. We highly recommend their expertise."
   },
   {
-    name: "Jane Smith",
-    image: "/path/to/image2.jpg",
+    
     stars: 5,
     websiteLogo: lilas,
     shopName: "Lilas's Cake Shop",
     description: "Fantastic work by Kait Solutions. Our e-commerce platform is now more user-friendly and efficient."
   },
   {
-    name: "Robert Johnson",
-    image: "/path/to/image3.jpg",
+
     stars: 5,
     websiteLogo: funiture,
     shopName: "Artisans Interior",
@@ -303,7 +301,7 @@ const Home = () => {
             </p>
             <div className="w-full aspect-w-16 aspect-h-10">
               <iframe
-                src="https://www.youtube.com/embed/qvMitRMiczs"
+                src={video}
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
