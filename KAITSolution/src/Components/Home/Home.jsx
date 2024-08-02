@@ -58,7 +58,7 @@ const Home = () => {
             <div className=" p-1.5 first-text ">
               <p>ELEVATE YOUR BRAND: PROFESSIONALLY CREAFTED WEBSITE FOR YOUR BUSINESS</p>
             </div>
-            <h2 className="text-2xl font-bold">LET'S BUILD AN EXCEPTIONAL WEBSITE TOGATHER.</h2>
+            <h2 className="text-2xl font-bold">LET'S BUILD AN EXCEPTIONAL WEBSITE TOGETHER.</h2>
             <p className='discription'>We are the Make Lots Foundation. We design professional websites for those in need. We’re offering our design services at an affordable rate to support small businesses in building their online presence.</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">

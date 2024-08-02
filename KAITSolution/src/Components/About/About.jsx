@@ -4,26 +4,33 @@ import aboutus from './About-images/aboutus.webp'
 import about1 from './About-images/about1.avif'
 import aboutmain from './About-images/about-main.jpg'
 
+
 const reviews = [
-  {
-    text: "I had an excellent experience with ArtisansInterior Furniture. The website is user-friendly, the furniture quality is outstanding, and the customer service is exceptional. Highly recommended for beautifully crafted pieces!",
-    image: "https://via.placeholder.com/150",
-    name: "Vivek",
-    shopName: "Artisans Interior"
-  },
-  {
-    text: "The Lilas Cake Shop exceeded my expectations! Their cakes are not only beautifully crafted but also incredibly delicious. The customer service was friendly and attentive, ensuring my order was perfect. Highly recommended for any special occasion!.",
-    image: "https://via.placeholder.com/150",
-    name: "Sager",
-    shopName: "The Lila's Cake Shop"
-  },
-  {
-    text: "Krishna Academy is fantastic! The instructors are knowledgeable and passionate, making learning engaging and effective. The curriculum is well-structured, and the support staff is always helpful. Highly recommended for anyone seeking quality education and a positive learning environment!",
-    image: "https://via.placeholder.com/150",
-    name: "Carol",
-    shopName: "Krishana Acadmey"
-  }
+  { id: 1, image: 'path/to/image1.jpg', shop: 'Shop A', review: 'Great service and delicious cakes!' },
+  { id: 2, image: 'path/to/image2.jpg', shop: 'Shop B', review: 'Loved the variety and taste!' },
+  { id: 3, image: 'path/to/image3.jpg', shop: 'Shop C', review: 'Best cake shop in town!' },
 ];
+
+// const reviews = [
+//   {
+//     text: "I had an excellent experience with ArtisansInterior Furniture. The website is user-friendly, the furniture quality is outstanding, and the customer service is exceptional. Highly recommended for beautifully crafted pieces!",
+    
+//     name: "Vivek",
+//     shopName: "Artisans Interior"
+//   },
+//   {
+//     text: "The Lilas Cake Shop exceeded my expectations! Their cakes are not only beautifully crafted but also incredibly delicious. The customer service was friendly and attentive, ensuring my order was perfect. Highly recommended for any special occasion!.",
+   
+//     name: "Sager",
+//     shopName: "The Lila's Cake Shop"
+//   },
+//   {
+//     text: "Krishna Academy is fantastic! The instructors are knowledgeable and passionate, making learning engaging and effective. The curriculum is well-structured, and the support staff is always helpful. Highly recommended for anyone seeking quality education and a positive learning environment!",
+   
+//     name: "Carol",
+//     shopName: "Krishana Acadmey"
+//   }
+// ];
 
 const ReviewCard = ({ reviewText, imageSrc, name, shopName }) => {
   return (
@@ -41,23 +48,23 @@ const ReviewCard = ({ reviewText, imageSrc, name, shopName }) => {
   );
 };
 
-const ReviewSection = () => {
-  return (
-    <div className="container mx-auto py-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {reviews.map((review, index) => (
-          <ReviewCard
-            key={index}
-            reviewText={review.text}
-            imageSrc={review.image}
-            name={review.name}
-            shopName={review.shopName}
-          />
-        ))}
-      </div>
-    </div>
-  );
-};
+// const ReviewSection = () => {
+//   return (
+//     <div className="container mx-auto py-8">
+//       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+//         {reviews.map((review, index) => (
+//           <ReviewCard
+//             key={index}
+//             reviewText={review.text}
+           
+//             name={review.name}
+//             shopName={review.shopName}
+//           />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
 
 const BigCard = () => {
   return (
@@ -140,8 +147,21 @@ const About = () => {
           <p className="text-lg mt-4">Our Happy Clients!</p>
         </div>
         <div className="w-full h-1 bg-gray-200 mb-8"></div>
-        <ReviewSection />
+        
       </div>
+      <div className="flex flex-wrap justify-center md:justify-start -mx-2">
+      {reviews.map((review) => (
+        <div key={review.id} className="w-full sm:w-1/2 md:w-1/3 p-2">
+          <div className="bg-white rounded-lg shadow-lg p-4 flex items-start space-x-4">
+            <img src={review.image} alt={review.shop} className="w-16 h-16 rounded-full object-cover" />
+            <div>
+              <h3 className="font-bold text-lg">{review.shop}</h3>
+              <p className="text-gray-600">{review.review}</p>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
     </>
   );
 };
