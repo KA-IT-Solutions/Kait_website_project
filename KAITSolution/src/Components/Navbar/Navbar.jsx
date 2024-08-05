@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { IoClose, IoMenu } from "react-icons/io5";
 import "./Navbar.css";
-// import logo from './kaitLogo.png'
+import logo from './kaitLogo.png'
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -30,7 +30,7 @@ const Navbar = () => {
     <header className="header">
       <nav className="nav container">
         <NavLink to="/" className="nav__logo">
-        <img src="img" alt="Logo" className="logo-image" />
+        <img src={logo} alt="Logo" className="logo-image" />
         </NavLink>
 
         <div className={`nav__menu ${showMenu ? "show-menu" : ""}`} id="nav-menu">

@@ -8,7 +8,7 @@ import employee1 from './Home-images/employee1.jpg'
 import webdesign from './Home-images/webdesign.png';
 import websitedesign from './Home-images/websiteDesign.webp'
 import karishna from './Home-images/logo1.jpeg';
-import lilas from './Home-images/logo2.png';
+import lilas from './Home-images/logo2.jpg';
 import funiture from './Home-images/logo3.png';
 import { FaPaintBrush, FaQuoteRight } from 'react-icons/fa';
 import { FaCreditCard, FaHeadset, FaTools, FaSearch, FaFileContract } from 'react-icons/fa';
@@ -123,7 +123,7 @@ const Home = () => {
             <div className=" p-1.5 first-text ">
               <p>ELEVATE YOUR BRAND: PROFESSIONALLY CREAFTED WEBSITE FOR YOUR BUSINESS</p>
             </div>
-            <h2 className="text-2xl font-bold">LET'S BUILD AN EXCEPTIONAL WEBSITE TOGATHER.</h2>
+            <h2 className="text-2xl font-bold">LET'S BUILD AN EXCEPTIONAL WEBSITE TOGETHER.</h2>
             <p className='discription'>We are the Make Lots Foundation. We design professional websites for those in need. We’re offering our design services at an affordable rate to support small businesses in building their online presence.</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
@@ -148,13 +148,13 @@ const Home = () => {
                 <div className="bg-white p-4 text-center">
                   <ul className="list-none">
                     <li className="py-2 border-b border-gray-300">5-Page Website</li>
-                    <li className="py-2 border-b border-gray-300">Domain Registrstion</li>
+                    <li className="py-2 border-b border-gray-300">Domain Registration</li>
                     <li className="py-2 border-b border-gray-300">Web Hosting*</li>
                     <li className="py-2 border-b border-gray-300">Business Email</li>
                     <li className="py-2">SEO Optimized Design</li>
                   </ul>
                   <Link to="/services">
-                    <button className="card2-heading text-white p-4 rounded-lg mt-4">Get Started</button>
+                    <button className="card1-heading text-white p-4 rounded-lg mt-4">Get Started</button>
                   </Link>
                 </div>
               </div>
@@ -422,20 +422,16 @@ const Home = () => {
       <div className=" min-h-screen py-10 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl font-bold mb-8">What Our Clients Are Saying</h1>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="bg-gray-100 p-6 rounded-lg shadow-lg">
-                <img
+                {/* <img
                   src={testimonial.image}
                   alt={testimonial.name}
                   className="w-24 h-24 rounded-full mx-auto"
-                />
-                <h2 className="text-xl font-semibold mt-4">{testimonial.name}</h2>
-                <div className="flex justify-center mt-2">
-                  {[...Array(testimonial.stars)].map((star, i) => (
-                    <FaStar key={i} className="text-yellow-500" />
-                  ))}
-                </div>
+                /> */}
+               
+
                 <div className="flex justify-center items-center mt-4">
                   <img
                     src={testimonial.websiteLogo}
@@ -444,6 +440,14 @@ const Home = () => {
                   />
                   <span>{testimonial.shopName}</span>
                 </div>
+                <h2 className="text-xl font-semibold mt-4">{testimonial.name}</h2>
+
+                <div className="flex justify-center mt-2">
+                  {[...Array(testimonial.stars)].map((star, i) => (
+                    <FaStar key={i} className="text-yellow-500" />
+                  ))}
+                </div>
+
                 <p className="mt-4 text-gray-600">{testimonial.description}</p>
               </div>
             ))}
