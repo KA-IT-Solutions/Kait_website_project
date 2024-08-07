@@ -1,6 +1,10 @@
+
+
+
 import React from 'react'
 import './Contact.css'
 import axios from 'axios';
+import { useState } from 'react';
 import contact from './banner.jpg'
 
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; // Importing icons
@@ -12,8 +16,8 @@ const Contact = () => {
   const [formState, setFormState] = useState({
     name: '',
     email: '',
-    phone: '',
     message: '',
+    phone: '',
   });
 
   const handleChange = (e) => {
@@ -27,9 +31,10 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8001/send', formState);
+      const response = await axios.post('http://localhost:8000/send', formState);
+      console.log('Response:', response.data); // Log the response from the server
       alert('Message sent successfully');
-      setFormState({ name: '', email: '', phone: '',message: '' });
+      setFormState({ name: '', email: '', message: '', phone: '' }); // Reset form state
     } catch (error) {
       console.error('There was an error sending the message!', error);
     }
@@ -50,7 +55,7 @@ const Contact = () => {
           {/* Left Side: Contact Form */}
           <div className="md:w-1/2 p-6">
             <h2 className="text-2xl font-bold mb-6 text-center">Get in Touch</h2>
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
                 <input
