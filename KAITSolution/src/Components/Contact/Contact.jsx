@@ -29,7 +29,7 @@ const Contact = () => {
     try {
       await axios.post('http://localhost:8001/send', formState);
       alert('Message sent successfully');
-      setFormState({ name: '', email: '', message: '' });
+      setFormState({ name: '', email: '', phone: '',message: '' });
     } catch (error) {
       console.error('There was an error sending the message!', error);
     }
