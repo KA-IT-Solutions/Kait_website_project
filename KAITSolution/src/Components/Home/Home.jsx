@@ -87,15 +87,15 @@ const Home = () => {
 
   useEffect(() => {
     let websitesInterval = setInterval(() => {
-      setWebsitesCreated(prev => (prev < 1000 ? prev + 1 : 1000));
+      setWebsitesCreated(prev => (prev < 100 ? prev + 1 : 100));
     }, 1);
 
     let companiesInterval = setInterval(() => {
-      setCompaniesHelped(prev => (prev < 750 ? prev + 1 : 750));
+      setCompaniesHelped(prev => (prev < 75 ? prev + 1 : 75));
     }, 1);
 
     let yearsInterval = setInterval(() => {
-      setYearsExperience(prev => (prev < 60 ? prev + 1 : 60));
+      setYearsExperience(prev => (prev < 5 ? prev + 1 : 50));
     }, 20);
 
     return () => {
