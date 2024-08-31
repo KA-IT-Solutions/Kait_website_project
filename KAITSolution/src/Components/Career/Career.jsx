@@ -23,11 +23,11 @@ const Career = () => {
   const currentDate = new Date();
 
   return (
-    <div className="min-h-screen p-4 bg-gray-100">
+    <div className="min-h-screen ">
       <div className="relative w-full h-32 sm:h-48 md:h-64 lg:h-80 xl:h-96 overflow-hidden mt-16 sm:mt-20 md:mt-24 lg:mt-28 xl:mt-32">
         <img src={bannerImage} alt="Banner" className="w-full h-auto object-cover" />
         <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-          <h1 className="text-4xl font-bold text-white">Career Opportunities</h1>
+          {/* <h1 className="text-4xl font-bold text-white">Career Opportunities</h1> */}
         </div>
       </div>
 

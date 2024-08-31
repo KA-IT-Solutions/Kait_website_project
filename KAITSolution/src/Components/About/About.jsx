@@ -48,23 +48,23 @@ const ReviewCard = ({ reviewText, imageSrc, name, shopName }) => {
   );
 };
 
-// const ReviewSection = () => {
-//   return (
-//     <div className="container mx-auto py-8">
-//       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-//         {reviews.map((review, index) => (
-//           <ReviewCard
-//             key={index}
-//             reviewText={review.text}
-           
-//             name={review.name}
-//             shopName={review.shopName}
-//           />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
+const ReviewSection = () => {
+  return (
+    <div className="container mx-auto py-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {reviews.map((review, index) => (
+          <ReviewCard
+            key={index}
+            reviewText={review.text}
+            imageSrc={review.image}
+            name={review.name}
+            shopName={review.shopName}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 const BigCard = () => {
   return (
@@ -78,21 +78,21 @@ const BigCard = () => {
           <h2 className="text-2xl font-bold">TECHNOLOGY LEADERSHIP</h2>
         </div>
         <p className="mb-6">
-          KAIT Solutions stays on top of new advances in the information technology world, so you can be assured that our software development technologies and technique choices are at the height of current knowledge.
+          Sprioc Software stays on top of new advances in the information technology world, so you can be assured that our software development technologies and technique choices are at the height of current knowledge.
         </p>
         <div className="flex items-center mb-4">
           <FaComments className="text-blue-500 text-3xl mr-3" /> {/* Icon for COMMUNICATION */}
           <h2 className="text-2xl font-bold">COMMUNICATION</h2>
         </div>
         <p>
-        KAIT Solutionswe take delight in providing excellent customer service. We guarantee we don’t promise anything we can’t follow up on. We are honest and completely accountable with our clients.
+          At Sprioc Software we take delight in providing excellent customer service. We guarantee we don’t promise anything we can’t follow up on. We are honest and completely accountable with our clients.
         </p>
         <div className="flex items-center mb-4">
           <div className="relative">
             <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-8 bg-gray-500"></div>
             <h2 className="text-2xl font-bold">VALUE</h2>
             <p>
-              Our offshore development facilities in Pune afford us the flexibility to charge competitive prices for our quality work. Our near decade of specializations and expertise guarantee that  KAIT Solutions costs are the
+              Our offshore development facilities in Pune afford us the flexibility to charge competitive prices for our quality work. Our near decade of specializations and expertise guarantee that Sprioc Software’s development costs are the
               most affordable relative to value added, and our finished products are of superior quality.
             </p>
           </div>
@@ -124,9 +124,10 @@ const About = () => {
               At KAIT Solutions, we are passionate about driving digital innovation and delivering transformative results for businesses of all sizes. Founded with a vision to bridge the gap between technology and business needs, we specialize in providing comprehensive digital marketing services that empower our clients to reach their full potential online.
               </p>
               <h3 className="text-xl font-semibold mb-4">
-                Our Mission: Our mission at KAIT Solutions is to empower businesses with innovative digital marketing solutions that drive growth, foster engagement, and create lasting value. We are dedicated to helping our clients navigate the ever-evolving digital landscape and achieve.</h3>
+                Our Mission: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ducimus, quo nisi atque ratione debitis minima eos quibusdam, reprehenderit error aspernatur neque sapiente eius incidunt fugit earum repellat eaque perspiciatis.
+              </h3>
               <p className="mb-4">
-              At KAIT Solutions, we believe in building long-term partnerships with our clients. Our commitment to excellence and customer satisfaction ensures that we are always striving to exceed expectations and deliver exceptional value.
+                To innovate and lead in our industry, always prioritizing quality and integrity. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ducimus, quo nisi atque ratione debitis minima eos quibusdam, reprehenderit error aspernatur neque sapiente eius incidunt fugit earum repellat eaque perspiciatis.
               </p>
               <div className="w-full h-1 bg-gray-200 mb-8"></div>
             </div>
@@ -136,32 +137,19 @@ const About = () => {
           </div>
         </div>
         <div className="text-center py-8">
-          <h2 className="text-3xl font-bold">WHY CHOOSE KAIT SOLUTIONS</h2>
+          <h2 className="text-3xl font-bold">WHY CHOOSE SPRIOC</h2>
           <p className="text-lg mt-4">
-          KAIT Solutions offers tailored digital marketing strategies, an expert team with proven results, and innovative tools to boost your online presence. We focus on your success with a client-centric approach and a comprehensive range of services. Choose us for effective, growth-driven solutions.
+            There are many reasons why Sprioc software technology is the company to choose for your software development or software product development project.
           </p>
         </div>
         <BigCard />
-        <div className="text-center py-8">
+        {/* <div className="text-center py-8">
           <h2 className="text-3xl font-bold">TESTIMONIALS</h2>
           <p className="text-lg mt-4">Our Happy Clients!</p>
         </div>
         <div className="w-full h-1 bg-gray-200 mb-8"></div>
-        
+        <ReviewSection />
       </div>
-      <div className="flex flex-wrap justify-center md:justify-start -mx-2">
-      {reviews.map((review) => (
-        <div key={review.id} className="w-full sm:w-1/2 md:w-1/3 p-2">
-          <div className="bg-white rounded-lg shadow-lg p-4 flex items-start space-x-4">
-            <img src={review.image} alt={review.shop} className="w-16 h-16 rounded-full object-cover" />
-            <div>
-              <h3 className="font-bold text-lg">{review.shop}</h3>
-              <p className="text-gray-600">{review.review}</p>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
     </>
   );
 };

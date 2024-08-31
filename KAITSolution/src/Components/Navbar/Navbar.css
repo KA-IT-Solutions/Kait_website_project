@@ -40,7 +40,7 @@
   }
   
   .nav__cta {
-    background-color: var(--first-color);
+    background-color: rgb(62, 179, 232);
     color: var(--title-color);
     border: none;
     border-radius: 4px;
