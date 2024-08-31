@@ -1,0 +1,12 @@
+/* Career.css */
+.card {
+    opacity: 0; /* Start as invisible */
+    transform: translateY(20px); /* Start position (20px down) */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for opacity and transform */
+  }
+  
+  .card.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+  }
+  

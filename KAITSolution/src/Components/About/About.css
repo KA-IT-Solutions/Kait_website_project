@@ -1,0 +1,36 @@
+/* CSS for Initial State (Hidden Below) */
+.hidden-bottom {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+  
+  /* CSS for Final State (At the Correct Position) */
+  .animate-up {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  /* Other Animations for Scrolling */
+  .hidden-left {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+  
+  .animate-left {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .hidden-right {
+    transform: translateX(100px);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+  
+  .animate-right {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
