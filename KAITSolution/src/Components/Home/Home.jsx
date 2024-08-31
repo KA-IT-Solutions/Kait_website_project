@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
 import { Link } from 'react-router-dom';
 import './Home.css';
 import background from './Home-images/background.avif';
@@ -94,15 +93,15 @@ const Home = () => {
 
   useEffect(() => {
     let websitesInterval = setInterval(() => {
-      setWebsitesCreated(prev => (prev < 100 ? prev + 1 : 100));
+      setWebsitesCreated(prev => (prev < 1000 ? prev + 1 : 1000));
     }, 1);
 
     let companiesInterval = setInterval(() => {
-      setCompaniesHelped(prev => (prev < 75 ? prev + 1 : 75));
+      setCompaniesHelped(prev => (prev < 750 ? prev + 1 : 750));
     }, 1);
 
     let yearsInterval = setInterval(() => {
-      setYearsExperience(prev => (prev < 5 ? prev + 1 : 50));
+      setYearsExperience(prev => (prev < 60 ? prev + 1 : 60));
     }, 20);
 
     return () => {
@@ -140,47 +139,11 @@ const Home = () => {
               <h2 className="text-2xl font-bold text-center">PLEASE SELECT YOUR PACKAGE</h2>
               <p className="text-center">Once your order is placed, we'll reach out to you shortly.</p>
             </div>
-<<<<<<< HEAD
 
             <div className="bg-white p-4 rounded-lg shadow-lg mt-0" data-aos="fade-up">
               <div className="grid grid-cols-1 gap-4">
                 <div className="p-4 rounded-t-lg italic card1-heading">
                   <h3 className="text-xl font-bold text-center">BUSINESS PRO WEBSITE</h3>
-=======
-            <h2 className="text-2xl font-bold">LET'S BUILD AN EXCEPTIONAL WEBSITE TOGETHER.</h2>
-            <p className='discription'>We are the Make Lots Foundation. We design professional websites for those in need. We’re offering our design services at an affordable rate to support small businesses in building their online presence.</p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
-
-              <div className="col-span-1 md:col-span-2 bg-dark-blue text-white p-4 rounded-lg grid-heading">
-                <h2 className="text-2xl font-bold text-center">PLEASE SELECT YOUR PACAKGE</h2>
-                <p className="text-center">Once your order is placed, we'll reach out to you shortly.</p>
-              </div>
-
-              <div className="bg-white p-4 rounded-lg shadow-lg mt-0">
-                <div className="grid grid-cols-1 gap-4">
-                  {/* <div className="bg-blue-200 p-4 rounded-t-lg">
-                    <h3 className="text-xl font-bold">Business Pro Website</h3>
-                  </div> */}
-                  <div className=" p-4 rounded-t-lg italic card1-heading">
-                    <h3 className="text-xl font-bold text-center">BUSINESS PRO WEBSITE</h3>
-                  </div>
-                </div>
-                <div className="bg-gray-300 p-4">
-                  <h3 className="text-xl font-bold text-center">$ 200</h3>
-                </div>
-                <div className="bg-white p-4 text-center">
-                  <ul className="list-none">
-                    <li className="py-2 border-b border-gray-300">5-Page Website</li>
-                    <li className="py-2 border-b border-gray-300">Domain Registration</li>
-                    <li className="py-2 border-b border-gray-300">Web Hosting*</li>
-                    <li className="py-2 border-b border-gray-300">Business Email</li>
-                    <li className="py-2">SEO Optimized Design</li>
-                  </ul>
-                  <Link to="/services">
-                    <button className="card1-heading text-white p-4 rounded-lg mt-4">Get Started</button>
-                  </Link>
->>>>>>> 426363d8bbeb5d9b287169c231a020d20eae589d
                 </div>
               </div>
               <div className="bg-gray-300 p-4">
@@ -306,16 +269,20 @@ const Home = () => {
       <div className=" min-h-screen py-10 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl font-bold mb-8">What Our Clients Are Saying</h1>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="bg-gray-100 p-6 rounded-lg shadow-lg">
-                {/* <img
+                <img
                   src={testimonial.image}
                   alt={testimonial.name}
                   className="w-24 h-24 rounded-full mx-auto"
-                /> */}
-               
-
+                />
+                <h2 className="text-xl font-semibold mt-4">{testimonial.name}</h2>
+                <div className="flex justify-center mt-2">
+                  {[...Array(testimonial.stars)].map((star, i) => (
+                    <FaStar key={i} className="text-yellow-500" />
+                  ))}
+                </div>
                 <div className="flex justify-center items-center mt-4">
                   <img
                     src={testimonial.websiteLogo}
@@ -324,14 +291,6 @@ const Home = () => {
                   />
                   <span>{testimonial.shopName}</span>
                 </div>
-                <h2 className="text-xl font-semibold mt-4">{testimonial.name}</h2>
-
-                <div className="flex justify-center mt-2">
-                  {[...Array(testimonial.stars)].map((star, i) => (
-                    <FaStar key={i} className="text-yellow-500" />
-                  ))}
-                </div>
-
                 <p className="mt-4 text-gray-600">{testimonial.description}</p>
               </div>
             ))}

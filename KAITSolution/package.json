@@ -13,12 +13,9 @@
     "@fortawesome/free-brands-svg-icons": "^6.6.0",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
-<<<<<<< HEAD
     "aos": "^2.3.4",
-=======
-    "axios": "^1.7.3",
+    "axios": "^1.7.6",
     "axois": "^0.0.1-security",
->>>>>>> 426363d8bbeb5d9b287169c231a020d20eae589d
     "react": "^18.3.1",
     "react-calendar": "^5.0.0",
     "react-dom": "^18.3.1",
