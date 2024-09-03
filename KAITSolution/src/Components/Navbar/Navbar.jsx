@@ -30,7 +30,7 @@ const Navbar = () => {
     <header className="header">
       <nav className="nav container">
         <NavLink to="/" className="nav__logo">
-        <img src={logo} alt="Logo" className="logo-image" />
+          <img src={logo} alt="Logo" className="logo-image" />
         </NavLink>
 
         <div className={`nav__menu ${showMenu ? "show-menu" : ""}`} id="nav-menu">
@@ -52,7 +52,7 @@ const Navbar = () => {
             </li>
             <li className="nav__item">
 
-             
+
 
               <NavLink to="/Career" className="nav__link" onClick={closeMenuOnMobile}>
                 Career

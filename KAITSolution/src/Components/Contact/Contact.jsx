@@ -1,6 +1,3 @@
-
-
-
 import React from 'react'
 import './Contact.css'
 import axios from 'axios';
