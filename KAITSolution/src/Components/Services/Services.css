@@ -1,0 +1,196 @@
+/* Services.css */
+/* Services.css */
+
+/* Base styles */
+.flex-grow {
+  flex-grow: 1;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  margin: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card .content {
+  padding: 20px;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.card button {
+  background-color: #4f46e5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #4338ca;
+}
+
+/* Animation classes */
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .card {
+    max-width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    max-width: 30%;
+  }
+}
+
+/* <----------animation---------> */
+/* animations.css */
+
+/* Keyframes for the zoom and slide-up animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Section container */
+.section-container {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Zoom on hover */
+.section-container:hover {
+  transform: scale(1.05);
+}
+
+/* Animation trigger when section is in view */
+.section-in-view {
+  opacity: 1;
+  transform: translateY(0);
+  animation: slideUp 0.5s ease forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .section-container {
+    padding: 1rem;
+  }
+
+  .section-container:hover {
+    transform: scale(1.02);
+  }
+}
+
+
+/* <------------animation---------> */
+
+
+/* Animation styles */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Common styles for animating sections */
+.animate-slide-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-visible {
+  animation: slideUp 0.6s forwards;
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.75rem; /* 28px */
+  }
+
+  p {
+    font-size: 1rem; /* 16px */
+  }
+
+  .full-width-on-mobile {
+    width: 100%;
+  }
+}
+
+/* <-----------> */
+
+
+/* popupAnimation.css */
+
+/* popupAnimation.css */
+
+@keyframes popup {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.popup-animation {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.popup-animate {
+  animation: popup 0.5s ease-out forwards;
+}
+
+
+

@@ -1,14 +1,18 @@
+
 import React from 'react'
 import './Contact.css'
+import React, { useEffect, useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import axios from 'axios';
-import { useState } from 'react';
-import contact from './banner.jpg'
-
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; // Importing icons
-
+import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import contact from './banner.jpg'; // Adjust the path to your image file
+import './Contact.css';
 
 const Contact = () => {
-
+  useEffect(() => {
+    AOS.init({ duration: 1000, offset: 200 });
+  }, []);
 
   const [formState, setFormState] = useState({
     name: '',
@@ -37,9 +41,6 @@ const Contact = () => {
     }
   };
 
-
-
-
   return (
     <>
       <div className="flex-grow">
@@ -50,7 +51,7 @@ const Contact = () => {
 
         <div className="flex flex-col md:flex-row p-8">
           {/* Left Side: Contact Form */}
-          <div className="md:w-1/2 p-6">
+          <div className="md:w-1/2 p-6" data-aos="fade-right">
             <h2 className="text-2xl font-bold mb-6 text-center">Get in Touch</h2>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
@@ -115,25 +116,24 @@ const Contact = () => {
           </div>
 
           {/* Right Side: Company Information */}
-          <div className="md:w-1/2 p-6">
-            <h2 className="text-2xl font-bold  mb-6 text-center font-sans ">Company Information</h2>
+          <div className="md:w-1/2 p-6" data-aos="fade-left">
+            <h2 className="text-2xl font-bold mb-6 text-center">Company Information</h2>
             <div className="space-y-4">
               <div className="flex items-center">
-
-                <p className="text-2xl font-bold mb-6   text-center ">KAIT Softwaer Solution LLP. </p>
+                <p className="text-2xl font-bold mb-6 text-center">KAIT Software Solution LLP.</p>
               </div>
               <div className="flex items-center">
                 <FaPhone className="text-indigo-600 text-3xl mr-2" />
-                <p className="text-1xl  mb-6 text-center ">+91-9764065434 / 8010339921</p>
+                <p className="text-1xl mb-6 text-center">+91-9764065434 / 8010339921</p>
               </div>
               <div className="flex items-center">
-                <FaEnvelope className="text-indigo-600  text-3xl mr-2 " />
-                <p className="text-1xl   mb-6 text-center font-mono">kaitsolutions1@gmail.com</p>
+                <FaEnvelope className="text-indigo-600 text-3xl mr-2" />
+                <p className="text-1xl mb-6 text-center font-mono">kaitsolutions1@gmail.com</p>
               </div>
               <div className="flex items-center">
-                <FaMapMarkerAlt className="text-indigo-600  text-3xl mr-2" />
-                <p className="text-1xl  mb-6 text-center ">
-                  KAIT Softwaer Solution LLP<br />
+                <FaMapMarkerAlt className="text-indigo-600 text-3xl mr-2" />
+                <p className="text-1xl mb-6 text-center">
+                  KAIT Software Solution LLP<br />
                   Sadguru Plaza, Opposite More Store,<br />
                   Rakshak Nagar, Kharadi,<br />
                   Pune, Maharashtra 411014, India
@@ -143,10 +143,18 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className='google-map' >
 
-        <iframe width="100%" height="380" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d121032.09867740012!2d73.7571596100699!3d18.562625409998702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bc2c36612827755%3A0x9372d84c4157f6e7!2ska%20it%20solutions%20pune!3m2!1d18.547134099999997!2d73.9361192!5e0!3m2!1sen!2sin!4v1722408322926!5m2!1sen!2sin"><a href="https://www.gps.ie/">gps tracker sport</a></iframe>
-
+      <div className='google-map'>
+        <iframe
+          width="100%"
+          height="380"
+          frameBorder="0"
+          scrolling="no"
+          marginHeight="0"
+          marginWidth="0"
+          src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d121032.09867740012!2d73.7571596100699!3d18.562625409998702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bc2c36612827755%3A0x9372d84c4157f6e7!2ska%20it%20solutions%20pune!3m2!1d18.547134099999997!2d73.9361192!5e0!3m2!1sen!2sin!4v1722408322926!5m2!1sen!2sin"
+          title="KAIT Software Solution LLP"
+        ></iframe>
       </div>
     </>
   );
