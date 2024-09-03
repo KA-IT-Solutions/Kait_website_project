@@ -1,7 +1,7 @@
 
 import React from 'react'
 import './Contact.css'
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import axios from 'axios';
