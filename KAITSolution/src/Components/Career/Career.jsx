@@ -47,7 +47,7 @@ const Career = () => {
         <div className="w-32 h-1 bg-indigo-600 mx-auto mb-6"></div>
       </div>
 
-      <div className="flex flex-wrap -mx-4 justify-center">
+      {/* <div className="flex flex-wrap -mx-4 justify-center">
         {internships.map((internship, index) => (
           <div
             key={internship.id}
@@ -77,7 +77,40 @@ const Career = () => {
             </div>
           </div>
         ))}
+      </div> */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center -mx-4">
+        {internships.map((internship, index) => (
+          <div
+            key={internship.id}
+            className={`px-4 mb-8 w-[1000px]`}
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div className={`shadow-lg rounded-lg p-6 flex flex-col justify-between h-[300px] card ${visibleCards[index] ? 'visible' : ''}`}>
+              <h2 className="text-xl font-bold mb-4">{internship.course}</h2>
+              <div className="flex justify-between items-center mb-4">
+                <div className="flex items-center">
+                  <FaUserAlt className="text-indigo-600 mr-2" />
+                  <span>{internship.positions} Open Positions</span>
+                </div>
+                <div className="flex items-center">
+                  <FaCalendarAlt className="text-indigo-600 mr-2" />
+                  <span>{addDays(currentDate, internship.daysFromToday)}</span>
+                </div>
+              </div>
+              <p className="mb-4 flex-grow">{internship.description}</p>
+              <Link
+                to="/applyform"
+                className="inline-block bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 text-center"
+              >
+                Apply Now
+              </Link>
+            </div>
+          </div>
+        ))}
       </div>
+
+
     </div>
   );
 };
