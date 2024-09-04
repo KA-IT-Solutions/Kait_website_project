@@ -32,7 +32,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/send', formState);
+      const response = await axios.post('http://localhost:8000/api/contact/send', formState);
       console.log('Response:', response.data); // Log the response from the server
       alert('Message sent successfully');
       setFormState({ name: '', email: '', message: '', phone: '' }); // Reset form state
