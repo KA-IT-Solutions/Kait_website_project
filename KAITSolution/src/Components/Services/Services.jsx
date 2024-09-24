@@ -87,6 +87,14 @@ const Services = () => {
   useEffect(() => {
     AOS.init(); // Initialize AOS
   }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const timer = setTimeout(() => {
+      setIsFormVisible(true);
+    }, 500); // delay to show the form after page load
+  
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
