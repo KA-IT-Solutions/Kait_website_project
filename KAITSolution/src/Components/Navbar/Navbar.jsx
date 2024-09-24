@@ -36,34 +36,35 @@ const Navbar = () => {
         <div className={`nav__menu ${showMenu ? "show-menu" : ""}`} id="nav-menu">
           <ul className="nav__list">
             <li className="nav__item">
-              <NavLink to="/" className="nav__link" onClick={closeMenuOnMobile}>
+              <NavLink to="/" className="nav__link font-bold" onClick={closeMenuOnMobile}>
                 Home
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/About" className="nav__link" onClick={closeMenuOnMobile}>
+              <NavLink to="/About" className="nav__link  font-bold" onClick={closeMenuOnMobile}>
                 About us
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/Services" className="nav__link" onClick={closeMenuOnMobile}>
+              <NavLink to="/Services" className="nav__link  font-bold" onClick={closeMenuOnMobile}>
                 Services
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/Career" className="nav__link" onClick={closeMenuOnMobile}>
+              <NavLink to="/Career" className="nav__link  font-bold" onClick={closeMenuOnMobile}>
                 Career
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/contact" className="nav__link nav__cta" onClick={closeMenuOnMobile}>
+              <NavLink to="/contact" className="nav__link nav__cta  font-bold" onClick={closeMenuOnMobile}>
                 Contact Us
               </NavLink>
             </li>
           </ul>
-          <div className="nav__close" id="nav-close" onClick={toggleMenu}>
-            <IoClose />
-          </div>
+          <div className="fixed top-0 right-0 p-4 z-50 block md:hidden bg-white shadow-lg" id="nav-close" onClick={toggleMenu}>
+  <IoClose className="text-3xl text-black" />
+</div>
+
         </div>
 
         <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>

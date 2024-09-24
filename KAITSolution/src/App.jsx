@@ -7,6 +7,7 @@ import Contact from './Components/Contact/Contact';
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import Career from './Components/Career/Career';
+import ApplyForm from './Components/Career/ApplyForm';
 
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
         <Route path="/services" element={<Services/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/career" element={<Career/>} />
+        <Route path="/applyform" element={<ApplyForm/>} />
+
       </Routes>
       <Footer/>
       
