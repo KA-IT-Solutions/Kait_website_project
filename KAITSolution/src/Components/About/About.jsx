@@ -23,21 +23,21 @@ const BigCard = () => {
           <h2 className="text-2xl font-bold">TECHNOLOGY LEADERSHIP</h2>
         </div>
         <p className="mb-6">
-          Sprioc Software stays on top of new advances in the information technology world, so you can be assured that our software development technologies and technique choices are at the height of current knowledge.
+          KAIT Solutions stays on top of new advances in the information technology world, ensuring our software development technologies and techniques are at the height of current knowledge.
         </p>
         <div className="flex items-center mb-4">
           <FaComments className="text-blue-500 text-3xl mr-3" />
           <h2 className="text-2xl font-bold">COMMUNICATION</h2>
         </div>
         <p>
-          At Sprioc Software we take delight in providing excellent customer service. We guarantee we don’t promise anything we can’t follow up on. We are honest and completely accountable with our clients.
+          At KAIT Solutions, we pride ourselves on providing excellent customer service. We are transparent, reliable, and fully accountable to our clients.
         </p>
         <div className="flex items-center mb-4">
           <div className="relative">
             <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1 h-8 bg-gray-500"></div>
             <h2 className="text-2xl font-bold">VALUE</h2>
             <p>
-              Our offshore development facilities in Pune afford us the flexibility to charge competitive prices for our quality work. Our near decade of specializations and expertise guarantee that Sprioc Software’s development costs are the most affordable relative to value added, and our finished products are of superior quality.
+              Our offshore development facilities allow us to offer competitive prices for high-quality work. With nearly a decade of specialization and expertise, KAIT Solutions delivers cost-effective, superior quality solutions.
             </p>
           </div>
         </div>
@@ -84,15 +84,15 @@ const About = () => {
           <div className="flex flex-col md:flex-row items-start gap-8">
             <div className="w-full md:w-1/2 hidden-left">
               <h2 className="text-2xl font-bold mb-4">ABOUT THE COMPANY</h2>
-              <h1 className="text-3xl font-bold mb-4">KAIT SOFTWARE SOLUTIONS</h1>
+              <h1 className="text-3xl font-bold mb-4">KAIT SOLUTIONS</h1>
               <p className="mb-4">
                 At KAIT Solutions, we are passionate about driving digital innovation and delivering transformative results for businesses of all sizes. Founded with a vision to bridge the gap between technology and business needs, we specialize in providing comprehensive digital marketing services that empower our clients to reach their full potential online.
               </p>
               <h3 className="text-xl font-semibold mb-4">
-                Our Mission: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ducimus, quo nisi atque ratione debitis minima eos quibusdam, reprehenderit error aspernatur neque sapiente eius incidunt fugit earum repellat eaque perspiciatis.
+                Our Mission: At KAIT Solutions, our mission is to empower businesses by delivering innovative and reliable IT solutions that drive efficiency, growth, and digital transformation. We are committed to providing cutting-edge technology services that cater to the evolving needs of our clients, ensuring they stay ahead in an ever-changing digital landscape.
               </h3>
               <p className="mb-4">
-                To innovate and lead in our industry, always prioritizing quality and integrity. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ducimus, quo nisi atque ratione debitis minima eos quibusdam, reprehenderit error aspernatur neque sapiente eius incidunt fugit earum repellat eaque perspiciatis.
+                We strive to innovate and lead in our industry, always prioritizing quality and integrity.
               </p>
               <div className="w-full h-1 bg-gray-200 mb-8"></div>
             </div>
@@ -102,9 +102,9 @@ const About = () => {
           </div>
         </div>
         <div className="text-center py-8">
-          <h2 className="text-3xl font-bold">WHY CHOOSE SPRIOC</h2>
+          <h2 className="text-3xl font-bold">WHY CHOOSE KAIT SOLUTIONS</h2>
           <p className="text-lg mt-4">
-            There are many reasons why Sprioc software technology is the company to choose for your software development or software product development project.
+            There are many reasons why KAIT Solutions is the ideal partner for your software development or digital marketing projects.
           </p>
         </div>
         <BigCard />
