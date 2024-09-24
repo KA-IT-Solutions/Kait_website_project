@@ -3,7 +3,7 @@ import { FaLaptopCode, FaComments } from 'react-icons/fa'; // Importing icons fr
 import aboutus from './About-images/aboutus.webp';
 import about1 from './About-images/about1.avif';
 import aboutmain from './About-images/about-main.jpg';
-import "./About.css"
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -13,11 +13,11 @@ const BigCard = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden mt-8" data-aos="fade-up">
-      <div className="md:w-1/2 flex justify-center items-center p-3">
+    <div className="flex flex-col md:flex-row bg-white shadow-lg rounded-lg overflow-hidden mt-8" >
+      <div className="md:w-1/2 flex justify-center items-center p-3"data-aos="fade-right">
         <img src={aboutus} alt="About Us" className="w-full h-full object-cover" />
       </div>
-      <div className="md:w-1/2 p-6 flex flex-col justify-center">
+      <div className="md:w-1/2 p-6 flex flex-col justify-center" data-aos="fade-left">
         <div className="flex items-center mb-4">
           <FaLaptopCode className="text-blue-500 text-3xl mr-3" />
           <h2 className="text-2xl font-bold">TECHNOLOGY LEADERSHIP</h2>
@@ -74,13 +74,13 @@ const About = () => {
 
   return (
     <>
-      <div className="relative w-full h-32 sm:h-48 md:h-64 lg:h-80 xl:h-96 overflow-hidden mt-16 sm:mt-20 md:mt-24 lg:mt-28 xl:mt-32 hidden-bottom animate-up">
+      <div className="relative w-full h-32 sm:h-48 md:h-64 lg:h-80 xl:h-96 overflow-hidden mt-16 sm:mt-20 md:mt-24 lg:mt-28 xl:mt-32 hidden-bottom animate-up"data-aos="fade-left">
         <img src={aboutmain} alt="Banner" className="w-full h-full object-cover animate-blink" />
       </div>
 
       <div>
-        <div className="w-full h-1 bg-gray-200 mb-8"></div>
-        <div className="container mx-auto p-4">
+        <div className="w-full h-1 bg-gray-200 mb-8" ></div>
+        <div className="container mx-auto p-4" data-aos="fade-right">
           <div className="flex flex-col md:flex-row items-start gap-8">
             <div className="w-full md:w-1/2 hidden-left">
               <h2 className="text-2xl font-bold mb-4">ABOUT THE COMPANY</h2>
@@ -101,7 +101,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="text-center py-8">
+        <div className="text-center py-8" data-aos="fade-up">
           <h2 className="text-3xl font-bold">WHY CHOOSE KAIT SOLUTIONS</h2>
           <p className="text-lg mt-4">
             There are many reasons why KAIT Solutions is the ideal partner for your software development or digital marketing projects.

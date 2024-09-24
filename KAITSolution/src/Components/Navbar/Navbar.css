@@ -121,7 +121,7 @@
 
   .nav__close {
     font-size: 1.8rem;
-    align-self: flex-end;
+    align-self: flex-start;
     cursor: pointer;
     margin-bottom: 20px; /* Add space below close button */
   }
