@@ -12,12 +12,12 @@ const services = [
   {
     id: 1,
     title: 'Web Development',
-    description: 'At Kait Solution, we specialize in providing top-notch web development services tailored to meet your unique needs',
+    description: 'At KA IT, we specialize in providing top-notch web development services tailored to meet your unique needs',
     image: '/Service1.jpg',
-    moreInfo: 'Static Websites: Fast, secure, and visually stunning. Dynamic Websites: Interactive, responsive, and easy to manage. ERP Systems: Custom solutions to streamline business processes. Partner with Kait Solution for professional web development services tailored to your needs.',
+    moreInfo: 'Static Websites: Fast, secure, and visually stunning. Dynamic Websites: Interactive, responsive, and easy to manage. ERP Systems: Custom solutions to streamline business processes. Partner with KA IT for professional web development services tailored to your needs.',
     details: {
       image: '/detail1.jpg',
-      text: 'At Kait Solution, we specialize in providing top-notch web development services tailored to meet your unique needs. Whether you require a static website, a dynamic web application, or a comprehensive ERP system, our experienced team is here to deliver.',
+      text: 'At KA IT, we specialize in providing top-notch web development services tailored to meet your unique needs. Whether you require a static website, a dynamic web application, or a comprehensive ERP system, our experienced team is here to deliver.',
     },
     additionalImages: [
       { img: '/service1_1.jpg', text: 'Static Websites: We create visually stunning static websites that are fast, secure, and perfect for showcasing your business or personal portfolio.' },
@@ -28,12 +28,12 @@ const services = [
   {
     id: 2,
     title: 'App Development',
-    description: 'At Kait Solution, we offer comprehensive app development services tailored to meet your unique needs',
+    description: 'At KA IT, we offer comprehensive app development services tailored to meet your unique needs',
     image: '/service2.jpg',
     moreInfo: 'In addition to web development, we specialize in app development for both iOS and Android platforms. Our apps are seamless, user-friendly, and feature-rich, ensuring consistent performance across multiple devices. We also provide custom app solutions tailored to your specific business requirements.',
     details: {
       image: '/detail2.jpg',
-      text: 'At Kait Solution, we offer comprehensive web and app development services tailored to meet your unique needs. Our web development expertise includes creating fast, secure, and visually stunning static websites, interactive and responsive dynamic websites, and custom ERP systems designed to streamline your business processes',
+      text: 'At KA IT, we offer comprehensive web and app development services tailored to meet your unique needs. Our web development expertise includes creating fast, secure, and visually stunning static websites, interactive and responsive dynamic websites, and custom ERP systems designed to streamline your business processes',
     },
     additionalImages: [
       { img: '/service2_1.jpg', text: 'Android apps that cater to various needs and reach a global audience via the Google Play Store.' },
@@ -53,7 +53,7 @@ const services = [
       text: 'Digital marketing encompasses various strategies to promote products or services online. It includes SEO to enhance website visibility, content marketing to attract and engage audiences, and social media marketing to build brand presence. Email marketing nurtures leads, while PPC advertising drives targeted traffic',
     },
     additionalImages: [
-      { img: '/service3_1.jpg', text: 'Targeted Advertising: At Kait Solution, we specialize in targeted advertising to reach specific audiences with personalized ad campaigns, using data-driven insights to maximize ROI and enhance ad performance.' },
+      { img: '/service3_1.jpg', text: 'Targeted Advertising: At KA IT, we specialize in targeted advertising to reach specific audiences with personalized ad campaigns, using data-driven insights to maximize ROI and enhance ad performance.' },
       { img: '/service3_5.jpg', text: 'Email marketing involves sending targeted emails to prospects and customers. It includes newsletters, promotional offers, and personalized messages designed to build customer loyalty and increase conversions.' },
       { img: '/service3_3.jpg', text: 'Social media management involves creating, scheduling, and monitoring content across social platforms to build brand presence, engage with your audience, and drive traffic. It includes managing posts, running ad campaigns, and analyzing performance to optimize strategy.' },
       { img: '/service3_4.jpg', text: 'Content marketing focuses on creating and sharing valuable, relevant content to attract and engage a target audience. This includes blog posts, articles, videos, and infographics designed to build brand authority, drive traffic, and foster customer loyalty' },
@@ -63,12 +63,12 @@ const services = [
   {
     id: 4,
     title: 'Branding',
-    description: 'At Kait Solution, we build a strong, cohesive brand identity through distinctive logos, consistent messaging, and a unified visual style to enhance recognition and trust.',
+    description: 'At KA IT, we build a strong, cohesive brand identity through distinctive logos, consistent messaging, and a unified visual style to enhance recognition and trust.',
     image: '/service3.png',
-    moreInfo: 'At Kait Solution, we focus on crafting a strong and cohesive brand identity. This involves creating distinctive logos, maintaining consistent messaging, and developing a unified visual style. Our approach is designed to enhance brand recognition, build trust, and effectively communicate our values and expertise across all platforms.',
+    moreInfo: 'At KA IT, we focus on crafting a strong and cohesive brand identity. This involves creating distinctive logos, maintaining consistent messaging, and developing a unified visual style. Our approach is designed to enhance brand recognition, build trust, and effectively communicate our values and expertise across all platforms.',
     details: {
       image: '/service3.png',
-      text: 'At Kait Solution, we build a strong, cohesive brand identity through distinctive logos, consistent messaging, and a unified visual style to enhance recognition and trust.',
+      text: 'At KA IT, we build a strong, cohesive brand identity through distinctive logos, consistent messaging, and a unified visual style to enhance recognition and trust.',
     },
     additionalImages: [
       { img: '/service4_1.jpg', text: 'Menu branding designs a menu that reflects your brand’s identity using consistent visual elements, fonts, and colors to attract attention and enhance customer experience.' },
@@ -87,22 +87,15 @@ const Services = () => {
   useEffect(() => {
     AOS.init(); // Initialize AOS
   }, []);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    const timer = setTimeout(() => {
-      setIsFormVisible(true);
-    }, 500); // delay to show the form after page load
-  
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <>
       <div className="flex-grow">
         {/* Banner */}
-        <div className="relative w-full h-32 sm:h-48 md:h-64 lg:h-80 xl:h-96 overflow-hidden mt-16 sm:mt-20 md:mt-24 lg:mt-28 xl:mt-32">
-          <img src={service} alt="Banner" className="w-full h-full object-cover animate-blink" />
-        </div>
+        <div className="relative w-full h-32 sm:h-48 md:h-64 lg:h-80 xl:h-96 overflow-hidden" data-aos="fade-left">
+        <img src={service } alt="Banner" className="w-full h-full object-cover" />
+      </div>
+
 
         <div className="flex flex-col items-center my-8" data-aos="fade-up">
           <h2 className="text-3xl font-bold text-center">OUR SERVICES</h2>
@@ -117,33 +110,43 @@ const Services = () => {
               <div className="p-4 md:p-8">
                 <h3 className="text-2xl font-bold">{selectedService.title}</h3>
                 <p className="mt-2 text-gray-600">{selectedService.details.text}</p>
-                <button onClick={() => setSelectedService(null)} className="mt-4 bg-blue-500 text-white py-2 px-4 rounded">Go Back</button>
               </div>
+            </div>
+
+            <div className="flex justify-center mt-4">
+              <button
+                className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                onClick={() => setSelectedService(null)}
+              >
+                Go Back
+              </button>
             </div>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4" data-aos="fade-up">
             {services.map((service) => (
-              <div
-                key={service.id}
-                className="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer"
-                onClick={() => setSelectedService(service)}
-                data-aos="fade-up"
-              >
+              <div key={service.id} className="bg-white shadow-lg rounded-lg overflow-hidden">
                 <img src={service.image} alt={service.title} className="w-full h-48 object-cover" />
                 <div className="p-4">
-                  <h3 className="text-lg font-bold">{service.title}</h3>
+                  <h3 className="text-2xl font-bold">{service.title}</h3>
                   <p className="mt-2 text-gray-600">{service.description}</p>
+                  <div className="flex justify-end mt-4">
+                    <button
+                      className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                      onClick={() => setSelectedService(service)}
+                    >
+                      View More
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
         )}
+        <YourComponent />
+        <DevelopmentProcess />
+        <Popup />
       </div>
-      <Popup />
-      <YourComponent />
-      <DevelopmentProcess />
-    
     </>
   );
 };
