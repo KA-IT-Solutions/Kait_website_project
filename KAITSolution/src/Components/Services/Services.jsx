@@ -143,9 +143,11 @@ const Services = () => {
             ))}
           </div>
         )}
+      
+        <Popup />
         <YourComponent />
         <DevelopmentProcess />
-        <Popup />
+        
       </div>
     </>
   );
