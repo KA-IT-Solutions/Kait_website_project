@@ -29,9 +29,14 @@ const Navbar = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        <NavLink to="/" className="nav__logo">
-          <img src={logo} alt="Logo" className="logo-image" />
-        </NavLink>
+      <NavLink to="/" className="nav__logo flex items-center">
+  <img 
+    src={logo} 
+    alt="Logo" 
+    className="logo-image h-[800px] w-auto md:mt-[10px] mt-[30px] max-w-full" 
+  />
+</NavLink>
+
 
         <div className={`nav__menu ${showMenu ? "show-menu" : ""}`} id="nav-menu">
           <ul className="nav__list">

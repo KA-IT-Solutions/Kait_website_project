@@ -53,9 +53,9 @@ const Contact = () => {
     <>
       <div className="flex-grow">
         {/* Banner */}
-        <div className="relative w-full h-32 sm:h-48 md:h-64 lg:h-80 xl:h-96 overflow-hidden mt-16 sm:mt-20 md:mt-24 lg:mt-28 xl:mt-32">
-          <img src={contact} alt="Banner" className="w-full h-full object-cover animate-blink" />
-        </div>
+        <div className="relative w-full h-32 sm:h-48 md:h-64 lg:h-80 xl:h-96 overflow-hidden" data-aos="fade-left">
+        <img src={contact} alt="Banner" className="w-full h-full object-cover" />
+      </div>
 
         <div className="flex flex-col md:flex-row p-8">
           {/* Left Side: Contact Form */}

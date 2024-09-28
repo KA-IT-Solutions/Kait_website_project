@@ -6,8 +6,11 @@
   align-items: center;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0; /* Ensure no margin on header */
+  padding: 0; /* Ensure no padding on header */
 }
 
+/* Nav container */
 .nav.container {
   width: 100%;
   max-width: 1150px;
@@ -18,14 +21,17 @@
   padding: 0 20px;
 }
 
+/* Logo image */
 .nav__logo img {
   height: 50px;
 }
 
 /* Menu display on larger screens */
 .nav__menu {
-  display: flex; /* Change to flex to show on larger screens */
-  align-items: center; /* Center items vertically */
+  display: flex; /* Keep flex display for larger screens */
+  align-items: center;
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove padding */
 }
 
 /* Mobile toggle button */
@@ -71,6 +77,20 @@
 
 .nav__cta:hover {
   background-color: #0056b3;
+}
+
+/* Remove default margin and padding from body and html */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  box-sizing: border-box; /* Ensure padding and margins are handled correctly */
+}
+
+/* Remove gap between navbar and hero/banner */
+.hero, .banner {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /* Media Queries for mobile */
@@ -135,21 +155,21 @@
 
   .nav__logo img {
     height: 50px;
-}
+  }
 
-/* Prevent horizontal scrolling */
-html, body {
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-}
+  /* Prevent horizontal scrolling */
+  html, body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
 
-* {
-  box-sizing: border-box; /* Ensure padding and margins don't cause overflow */
-}
+  * {
+    box-sizing: border-box; /* Ensure padding and margins don't cause overflow */
+  }
 
-/* Ensure sections are responsive */
-section {
-  width: 100%; /* Full width for all sections */
-  padding: 20px; /* General padding */
-  overflow: hidden; /* Prevent overflow issues */
-}
+  /* Ensure sections are responsive */
+  section {
+    width: 100%; /* Full width for all sections */
+    padding: 20px; /* General padding */
+    overflow: hidden; /* Prevent overflow issues */
+  }
 }

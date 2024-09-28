@@ -124,7 +124,7 @@ const Home = () => {
 
   return (
     <>
-    <div className="container mx-auto p-4 home-container transition-opacity duration-1000">
+    <div className="container mx-auto p-4 home-container mt-[-5px] transition-opacity duration-1000">
       <div className="flex flex-col md:flex-row gap-8">
         {/* Left side */}
         <div className="flex flex-col gap-4 w-full md:w-1/2" data-aos="fade-right">

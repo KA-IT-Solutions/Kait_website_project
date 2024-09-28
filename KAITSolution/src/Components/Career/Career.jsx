@@ -38,8 +38,8 @@ const Career = () => {
 
   return (
     <div className="min-h-screen">
-      <div className="relative w-full h-32 sm:h-48 md:h-64 lg:h-80 xl:h-96 overflow-hidden mt-16 sm:mt-20 md:mt-24 lg:mt-28 xl:mt-32">
-        <img src={bannerImage} alt="Banner" className="w-full h-auto object-cover" />
+   <div className="relative w-full h-32 sm:h-48 md:h-64 lg:h-80 xl:h-96 overflow-hidden" data-aos="fade-left">
+        <img src={bannerImage } alt="Banner" className="w-full h-full object-cover" />
       </div>
 
       <div className="text-center mb-8 mt-8">
