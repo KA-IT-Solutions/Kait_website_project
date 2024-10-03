@@ -8,8 +8,8 @@ import webdesign from './Home-images/webdesign.png';  // Replace with the correc
 const Professional = () => {
   // Define the values here
   const websitesCreated = 100; // Example value
-  const companiesHelped = 50;  // Example value
-  const yearsExperience = 20;  // Example value
+  const companiesHelped = 75;  // Example value
+  const yearsExperience = 3;  // Example value
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
