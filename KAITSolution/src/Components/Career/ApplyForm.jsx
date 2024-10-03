@@ -4,7 +4,7 @@ const ApplyForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     contact: "",
-    email: "",
+    email: "",  // Added email field
     dob: "",
     education: "",
     address: "",
@@ -40,10 +40,19 @@ const ApplyForm = () => {
         method: "POST",
         body: formDataToSend,
       });
-      
 
       if (response.ok) {
         alert("Form submitted successfully!");
+        setFormData({
+          name: "",
+          contact: "",
+          email: "",
+          dob: "",
+          education: "",
+          address: "",
+          permanentAddress: "",
+          resume: null,
+        });
       } else {
         alert("Error submitting form.");
       }
@@ -51,7 +60,6 @@ const ApplyForm = () => {
       console.error("Error in fetch request:", error);
     }
   };
-
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100 mt-[8rem]">
